@@ -1,0 +1,548 @@
+{
+  "model_run": "races_initial_event_type_final",
+  "external_rows": 155617,
+  "external_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "external_circuits": [
+    "Spa-Francorchamps"
+  ],
+  "leakage_check": {
+    "training_samples_found": true,
+    "training_session_keys": [
+      7953,
+      9094,
+      9126,
+      9157,
+      9165,
+      9472,
+      9523,
+      9558,
+      9590,
+      9606,
+      9896,
+      9912,
+      9947,
+      9979,
+      10014
+    ],
+    "external_session_keys": [
+      9141,
+      9574,
+      9939
+    ],
+    "overlap_session_keys": [],
+    "training_circuit_keys": [
+      2,
+      22,
+      39,
+      61,
+      63
+    ],
+    "external_circuit_keys": [
+      7
+    ],
+    "external_circuit_seen_in_training": []
+  },
+  "targets": {
+    "label_overtake": {
+      "model_oof_raw_metrics": {
+        "roc_auc": 0.8877965930179946,
+        "pr_auc": 0.36643982185436913,
+        "brier": 0.04877020615545761
+      },
+      "model_oof_display_metrics": {
+        "roc_auc": 0.8884172085222976,
+        "pr_auc": 0.36235615633035567,
+        "brier": 0.021076827160272843
+      },
+      "external_all_rows": {
+        "rows": 155617,
+        "positive": 4503,
+        "negative": 151114,
+        "positive_rate": 0.028936427254091776,
+        "raw_roc_auc": 0.8530155588503744,
+        "raw_pr_auc": 0.23657298325280532,
+        "raw_brier": 0.09616808660525236,
+        "display_brier": 0.026568096943464677,
+        "mean_raw_probability": 0.1696836719997609,
+        "mean_display_probability": 0.042642932385526355
+      },
+      "external_quality_filtered": {
+        "rows": 121571,
+        "positive": 4503,
+        "negative": 117068,
+        "positive_rate": 0.037040083572562534,
+        "raw_roc_auc": 0.9087043928550771,
+        "raw_pr_auc": 0.42792994751767816,
+        "raw_brier": 0.04364958272536653,
+        "display_brier": 0.027742192437883645,
+        "mean_raw_probability": 0.10671326405055637,
+        "mean_display_probability": 0.026757754135507586
+      },
+      "quality_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 155617,
+        "train_rows_after": 121571,
+        "train_positive_before": 4503,
+        "train_positive_after": 4503,
+        "train_positive_rate_before": 0.028936427254091776,
+        "train_positive_rate_after": 0.037040083572562534,
+        "train_balance_before": {
+          "rows": 155617,
+          "positive": 4503,
+          "negative": 151114,
+          "positive_rate": 0.028936427254091776
+        },
+        "train_balance_after": {
+          "rows": 121571,
+          "positive": 4503,
+          "negative": 117068,
+          "positive_rate": 0.037040083572562534
+        },
+        "excluded_rows": 34046,
+        "excluded_groups": [
+          {
+            "target": "label_overtake",
+            "rows": 10928,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "strict_on_track_event_type_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 683,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "pit_window_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 124,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "restart_phase_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 22311,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "not_same_lap_exclusion"
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "display_threshold": 0.1,
+          "predicted_positive": 6646,
+          "true_positive": 2417,
+          "false_positive": 4229,
+          "precision": 0.3636773999398134,
+          "recall": 0.5367532755940484
+        },
+        {
+          "display_threshold": 0.2,
+          "predicted_positive": 2573,
+          "true_positive": 1478,
+          "false_positive": 1095,
+          "precision": 0.5744267392149243,
+          "recall": 0.3282256273595381
+        },
+        {
+          "display_threshold": 0.3,
+          "predicted_positive": 1804,
+          "true_positive": 1153,
+          "false_positive": 651,
+          "precision": 0.6391352549889135,
+          "recall": 0.2560515212080835
+        },
+        {
+          "display_threshold": 0.5,
+          "predicted_positive": 796,
+          "true_positive": 603,
+          "false_positive": 193,
+          "precision": 0.757537688442211,
+          "recall": 0.13391072618254496
+        }
+      ]
+    },
+    "label_position_gain": {
+      "model_oof_raw_metrics": {
+        "roc_auc": 0.8944311375491354,
+        "pr_auc": 0.38679203444612187,
+        "brier": 0.053161476648769065
+      },
+      "model_oof_display_metrics": {
+        "roc_auc": 0.8949429814455817,
+        "pr_auc": 0.37843462830825053,
+        "brier": 0.024022753584596164
+      },
+      "external_all_rows": {
+        "rows": 155617,
+        "positive": 10473,
+        "negative": 145144,
+        "positive_rate": 0.06729984513260119,
+        "raw_roc_auc": 0.7824671601432794,
+        "raw_pr_auc": 0.32328264055331185,
+        "raw_brier": 0.07100559752516881,
+        "display_brier": 0.05583861800070943,
+        "mean_raw_probability": 0.11934280548631258,
+        "mean_display_probability": 0.030437476305834852
+      },
+      "external_quality_filtered": {
+        "rows": 148743,
+        "positive": 6381,
+        "negative": 142362,
+        "positive_rate": 0.042899497791492706,
+        "raw_roc_auc": 0.8732897304489582,
+        "raw_pr_auc": 0.3928955409544602,
+        "raw_brier": 0.052739579768927694,
+        "display_brier": 0.032971607889674966,
+        "mean_raw_probability": 0.1170370987712739,
+        "mean_display_probability": 0.02981321432878678
+      },
+      "quality_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 155617,
+        "train_rows_after": 148743,
+        "train_positive_before": 10473,
+        "train_positive_after": 6381,
+        "train_positive_rate_before": 0.06729984513260119,
+        "train_positive_rate_after": 0.042899497791492706,
+        "train_balance_before": {
+          "rows": 155617,
+          "positive": 10473,
+          "negative": 145144,
+          "positive_rate": 0.06729984513260119
+        },
+        "train_balance_after": {
+          "rows": 148743,
+          "positive": 6381,
+          "negative": 142362,
+          "positive_rate": 0.042899497791492706
+        },
+        "excluded_rows": 6874,
+        "excluded_groups": [
+          {
+            "target": "label_position_gain",
+            "rows": 6874,
+            "positive": 4092,
+            "positive_rate": 0.5952865871399476,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "display_threshold": 0.1,
+          "predicted_positive": 8169,
+          "true_positive": 2997,
+          "false_positive": 5172,
+          "precision": 0.3668747704737422,
+          "recall": 0.4696755994358251
+        },
+        {
+          "display_threshold": 0.2,
+          "predicted_positive": 3825,
+          "true_positive": 1995,
+          "false_positive": 1830,
+          "precision": 0.5215686274509804,
+          "recall": 0.3126469205453691
+        },
+        {
+          "display_threshold": 0.3,
+          "predicted_positive": 2439,
+          "true_positive": 1474,
+          "false_positive": 965,
+          "precision": 0.6043460434604346,
+          "recall": 0.23099827613226767
+        },
+        {
+          "display_threshold": 0.5,
+          "predicted_positive": 986,
+          "true_positive": 776,
+          "false_positive": 210,
+          "precision": 0.7870182555780934,
+          "recall": 0.12161103275348692
+        }
+      ]
+    },
+    "label_position_loss": {
+      "model_oof_raw_metrics": {
+        "roc_auc": 0.9125970208911587,
+        "pr_auc": 0.31527526538605943,
+        "brier": 0.012457422805709637
+      },
+      "model_oof_display_metrics": {
+        "roc_auc": 0.9141631495412844,
+        "pr_auc": 0.30678378986579236,
+        "brier": 0.006962304934907553
+      },
+      "external_all_rows": {
+        "rows": 155617,
+        "positive": 5041,
+        "negative": 150576,
+        "positive_rate": 0.03239363308635946,
+        "raw_roc_auc": 0.6810659696534533,
+        "raw_pr_auc": 0.1343151256989132,
+        "raw_brier": 0.036031780534571255,
+        "display_brier": 0.03031910270991111,
+        "mean_raw_probability": 0.030360807718658095,
+        "mean_display_probability": 0.011252910742308754
+      },
+      "external_quality_filtered": {
+        "rows": 148743,
+        "positive": 2248,
+        "negative": 146495,
+        "positive_rate": 0.015113316256899484,
+        "raw_roc_auc": 0.8311143852577043,
+        "raw_pr_auc": 0.19548564756790573,
+        "raw_brier": 0.019437677634605383,
+        "display_brier": 0.01343352789331542,
+        "mean_raw_probability": 0.02886281515623782,
+        "mean_display_probability": 0.01087237387673143
+      },
+      "quality_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 155617,
+        "train_rows_after": 148743,
+        "train_positive_before": 5041,
+        "train_positive_after": 2248,
+        "train_positive_rate_before": 0.03239363308635946,
+        "train_positive_rate_after": 0.015113316256899484,
+        "train_balance_before": {
+          "rows": 155617,
+          "positive": 5041,
+          "negative": 150576,
+          "positive_rate": 0.03239363308635946
+        },
+        "train_balance_after": {
+          "rows": 148743,
+          "positive": 2248,
+          "negative": 146495,
+          "positive_rate": 0.015113316256899484
+        },
+        "excluded_rows": 6874,
+        "excluded_groups": [
+          {
+            "target": "label_position_loss",
+            "rows": 6874,
+            "positive": 2793,
+            "positive_rate": 0.4063136456211813,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "display_threshold": 0.1,
+          "predicted_positive": 2006,
+          "true_positive": 615,
+          "false_positive": 1391,
+          "precision": 0.306580259222333,
+          "recall": 0.273576512455516
+        },
+        {
+          "display_threshold": 0.2,
+          "predicted_positive": 920,
+          "true_positive": 354,
+          "false_positive": 566,
+          "precision": 0.3847826086956522,
+          "recall": 0.15747330960854092
+        },
+        {
+          "display_threshold": 0.3,
+          "predicted_positive": 693,
+          "true_positive": 292,
+          "false_positive": 401,
+          "precision": 0.4213564213564214,
+          "recall": 0.1298932384341637
+        },
+        {
+          "display_threshold": 0.5,
+          "predicted_positive": 68,
+          "true_positive": 55,
+          "false_positive": 13,
+          "precision": 0.8088235294117647,
+          "recall": 0.024466192170818506
+        }
+      ]
+    },
+    "label_position_change": {
+      "model_oof_raw_metrics": {
+        "roc_auc": 0.8884454327706528,
+        "pr_auc": 0.4026629401177185,
+        "brier": 0.0604322069567771
+      },
+      "model_oof_display_metrics": {
+        "roc_auc": 0.8889647527102824,
+        "pr_auc": 0.3962539359565966,
+        "brier": 0.029514715811340308
+      },
+      "external_all_rows": {
+        "rows": 155617,
+        "positive": 15431,
+        "negative": 140186,
+        "positive_rate": 0.0991601174678859,
+        "raw_roc_auc": 0.7739520243175486,
+        "raw_pr_auc": 0.3696682232824949,
+        "raw_brier": 0.09458753287192287,
+        "display_brier": 0.0802511888181736,
+        "mean_raw_probability": 0.15162977086767154,
+        "mean_display_probability": 0.04301131655966758
+      },
+      "external_quality_filtered": {
+        "rows": 148743,
+        "positive": 8557,
+        "negative": 140186,
+        "positive_rate": 0.05752875765582246,
+        "raw_roc_auc": 0.8527680384351078,
+        "raw_pr_auc": 0.42101916576066584,
+        "raw_brier": 0.06860554458071157,
+        "display_brier": 0.042912770202182926,
+        "mean_raw_probability": 0.14801035646536645,
+        "mean_display_probability": 0.04211806882208601
+      },
+      "quality_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 155617,
+        "train_rows_after": 148743,
+        "train_positive_before": 15431,
+        "train_positive_after": 8557,
+        "train_positive_rate_before": 0.0991601174678859,
+        "train_positive_rate_after": 0.05752875765582246,
+        "train_balance_before": {
+          "rows": 155617,
+          "positive": 15431,
+          "negative": 140186,
+          "positive_rate": 0.0991601174678859
+        },
+        "train_balance_after": {
+          "rows": 148743,
+          "positive": 8557,
+          "negative": 140186,
+          "positive_rate": 0.05752875765582246
+        },
+        "excluded_rows": 6874,
+        "excluded_groups": [
+          {
+            "target": "label_position_change",
+            "rows": 6874,
+            "positive": 6874,
+            "positive_rate": 1.0,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "display_threshold": 0.1,
+          "predicted_positive": 13060,
+          "true_positive": 4476,
+          "false_positive": 8584,
+          "precision": 0.3427258805513017,
+          "recall": 0.523080518873437
+        },
+        {
+          "display_threshold": 0.2,
+          "predicted_positive": 5600,
+          "true_positive": 2943,
+          "false_positive": 2657,
+          "precision": 0.5255357142857143,
+          "recall": 0.34392894706088584
+        },
+        {
+          "display_threshold": 0.3,
+          "predicted_positive": 3877,
+          "true_positive": 2358,
+          "false_positive": 1519,
+          "precision": 0.6082022182099561,
+          "recall": 0.2755638658408321
+        },
+        {
+          "display_threshold": 0.5,
+          "predicted_positive": 1410,
+          "true_positive": 1117,
+          "false_positive": 293,
+          "precision": 0.7921985815602837,
+          "recall": 0.13053640294495736
+        }
+      ]
+    }
+  }
+}

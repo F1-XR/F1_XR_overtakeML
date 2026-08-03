@@ -1,0 +1,1801 @@
+{
+  "run_name": "races_initial_event_type_final",
+  "sample_path": "data\\processed\\races_initial_event_type_final_samples.parquet",
+  "rows": 837804,
+  "targets": {
+    "label_overtake": {
+      "final_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 837804,
+        "train_rows_after": 618499,
+        "train_positive_before": 17179,
+        "train_positive_after": 17179,
+        "train_positive_rate_before": 0.020504795871110666,
+        "train_positive_rate_after": 0.02777530763994768,
+        "train_balance_before": {
+          "rows": 837804,
+          "positive": 17179,
+          "negative": 820625,
+          "positive_rate": 0.020504795871110666
+        },
+        "train_balance_after": {
+          "rows": 618499,
+          "positive": 17179,
+          "negative": 601320,
+          "positive_rate": 0.02777530763994768
+        },
+        "excluded_rows": 219305,
+        "excluded_groups": [
+          {
+            "target": "label_overtake",
+            "rows": 46434,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "strict_on_track_event_type_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 63840,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 3197,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "pit_window_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 6880,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "restart_phase_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 98954,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "not_same_lap_exclusion"
+          }
+        ]
+      },
+      "eval_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 529899,
+        "train_rows_after": 396488,
+        "train_positive_before": 10279,
+        "train_positive_after": 10279,
+        "train_positive_rate_before": 0.01939803622954563,
+        "train_positive_rate_after": 0.025925122576219206,
+        "train_balance_before": {
+          "rows": 529899,
+          "positive": 10279,
+          "negative": 519620,
+          "positive_rate": 0.01939803622954563
+        },
+        "train_balance_after": {
+          "rows": 396488,
+          "positive": 10279,
+          "negative": 386209,
+          "positive_rate": 0.025925122576219206
+        },
+        "excluded_rows": 133411,
+        "excluded_groups": [
+          {
+            "target": "label_overtake",
+            "rows": 24354,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "strict_on_track_event_type_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 36182,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 2014,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "pit_window_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 2161,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "restart_phase_exclusion"
+          },
+          {
+            "target": "label_overtake",
+            "rows": 68700,
+            "positive": 0,
+            "positive_rate": 0.0,
+            "reason": "not_same_lap_exclusion"
+          }
+        ]
+      },
+      "eval_split_report": {
+        "method": "season_holdout",
+        "group_columns": [
+          "season",
+          "session_key",
+          "circuit_short_name"
+        ],
+        "train_years": [
+          2023,
+          2024
+        ],
+        "test_year": 2025,
+        "train_session_keys": [
+          7953,
+          9094,
+          9126,
+          9157,
+          9165,
+          9472,
+          9523,
+          9558,
+          9590,
+          9606
+        ],
+        "test_session_keys": [
+          9896,
+          9912,
+          9947,
+          9979,
+          10014
+        ],
+        "overlap_session_keys": [],
+        "train_balance": {
+          "rows": 396488,
+          "positive": 10279,
+          "negative": 386209,
+          "positive_rate": 0.025925122576219206
+        },
+        "test_balance": {
+          "rows": 222011,
+          "positive": 6900,
+          "negative": 215111,
+          "positive_rate": 0.03107954110381918
+        }
+      },
+      "positive_absolute_risk": "low"
+    },
+    "label_position_gain": {
+      "final_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 837804,
+        "train_rows_after": 740057,
+        "train_positive_before": 43855,
+        "train_positive_after": 23803,
+        "train_positive_rate_before": 0.05234517858592225,
+        "train_positive_rate_after": 0.032163738739043074,
+        "train_balance_before": {
+          "rows": 837804,
+          "positive": 43855,
+          "negative": 793949,
+          "positive_rate": 0.05234517858592225
+        },
+        "train_balance_after": {
+          "rows": 740057,
+          "positive": 23803,
+          "negative": 716254,
+          "positive_rate": 0.032163738739043074
+        },
+        "excluded_rows": 97747,
+        "excluded_groups": [
+          {
+            "target": "label_position_gain",
+            "rows": 67702,
+            "positive": 2170,
+            "positive_rate": 0.03205222888540959,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_position_gain",
+            "rows": 30045,
+            "positive": 17882,
+            "positive_rate": 0.5951739058079547,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "eval_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 529899,
+        "train_rows_after": 476686,
+        "train_positive_before": 24359,
+        "train_positive_after": 14095,
+        "train_positive_rate_before": 0.04596913751488491,
+        "train_positive_rate_after": 0.02956873077875163,
+        "train_balance_before": {
+          "rows": 529899,
+          "positive": 24359,
+          "negative": 505540,
+          "positive_rate": 0.04596913751488491
+        },
+        "train_balance_after": {
+          "rows": 476686,
+          "positive": 14095,
+          "negative": 462591,
+          "positive_rate": 0.02956873077875163
+        },
+        "excluded_rows": 53213,
+        "excluded_groups": [
+          {
+            "target": "label_position_gain",
+            "rows": 38241,
+            "positive": 1197,
+            "positive_rate": 0.03130148270181219,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_position_gain",
+            "rows": 14972,
+            "positive": 9067,
+            "positive_rate": 0.605597114613946,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "eval_split_report": {
+        "method": "season_holdout",
+        "group_columns": [
+          "season",
+          "session_key",
+          "circuit_short_name"
+        ],
+        "train_years": [
+          2023,
+          2024
+        ],
+        "test_year": 2025,
+        "train_session_keys": [
+          7953,
+          9094,
+          9126,
+          9157,
+          9165,
+          9472,
+          9523,
+          9558,
+          9590,
+          9606
+        ],
+        "test_session_keys": [
+          9896,
+          9912,
+          9947,
+          9979,
+          10014
+        ],
+        "overlap_session_keys": [],
+        "train_balance": {
+          "rows": 476686,
+          "positive": 14095,
+          "negative": 462591,
+          "positive_rate": 0.02956873077875163
+        },
+        "test_balance": {
+          "rows": 263371,
+          "positive": 9708,
+          "negative": 253663,
+          "positive_rate": 0.03686055032634573
+        }
+      },
+      "positive_absolute_risk": "low"
+    },
+    "label_position_loss": {
+      "final_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 837804,
+        "train_rows_after": 740057,
+        "train_positive_before": 20806,
+        "train_positive_after": 6513,
+        "train_positive_rate_before": 0.024833970713913994,
+        "train_positive_rate_after": 0.008800673461638766,
+        "train_balance_before": {
+          "rows": 837804,
+          "positive": 20806,
+          "negative": 816998,
+          "positive_rate": 0.024833970713913994
+        },
+        "train_balance_after": {
+          "rows": 740057,
+          "positive": 6513,
+          "negative": 733544,
+          "positive_rate": 0.008800673461638766
+        },
+        "excluded_rows": 97747,
+        "excluded_groups": [
+          {
+            "target": "label_position_loss",
+            "rows": 67702,
+            "positive": 1861,
+            "positive_rate": 0.02748810965702638,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_position_loss",
+            "rows": 30045,
+            "positive": 12432,
+            "positive_rate": 0.41377933100349473,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "eval_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 529899,
+        "train_rows_after": 476686,
+        "train_positive_before": 10649,
+        "train_positive_after": 3684,
+        "train_positive_rate_before": 0.020096282499117758,
+        "train_positive_rate_after": 0.007728357870799646,
+        "train_balance_before": {
+          "rows": 529899,
+          "positive": 10649,
+          "negative": 519250,
+          "positive_rate": 0.020096282499117758
+        },
+        "train_balance_after": {
+          "rows": 476686,
+          "positive": 3684,
+          "negative": 473002,
+          "positive_rate": 0.007728357870799646
+        },
+        "excluded_rows": 53213,
+        "excluded_groups": [
+          {
+            "target": "label_position_loss",
+            "rows": 38241,
+            "positive": 935,
+            "positive_rate": 0.02445019743207552,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_position_loss",
+            "rows": 14972,
+            "positive": 6030,
+            "positive_rate": 0.40275180336628374,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "eval_split_report": {
+        "method": "season_holdout",
+        "group_columns": [
+          "season",
+          "session_key",
+          "circuit_short_name"
+        ],
+        "train_years": [
+          2023,
+          2024
+        ],
+        "test_year": 2025,
+        "train_session_keys": [
+          7953,
+          9094,
+          9126,
+          9157,
+          9165,
+          9472,
+          9523,
+          9558,
+          9590,
+          9606
+        ],
+        "test_session_keys": [
+          9896,
+          9912,
+          9947,
+          9979,
+          10014
+        ],
+        "overlap_session_keys": [],
+        "train_balance": {
+          "rows": 476686,
+          "positive": 3684,
+          "negative": 473002,
+          "positive_rate": 0.007728357870799646
+        },
+        "test_balance": {
+          "rows": 263371,
+          "positive": 2829,
+          "negative": 260542,
+          "positive_rate": 0.010741501532059338
+        }
+      },
+      "positive_absolute_risk": "low"
+    },
+    "label_position_change": {
+      "final_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 837804,
+        "train_rows_after": 740057,
+        "train_positive_before": 63574,
+        "train_positive_after": 29667,
+        "train_positive_rate_before": 0.07588170980324754,
+        "train_positive_rate_after": 0.04008745272323618,
+        "train_balance_before": {
+          "rows": 837804,
+          "positive": 63574,
+          "negative": 774230,
+          "positive_rate": 0.07588170980324754
+        },
+        "train_balance_after": {
+          "rows": 740057,
+          "positive": 29667,
+          "negative": 710390,
+          "positive_rate": 0.04008745272323618
+        },
+        "excluded_rows": 97747,
+        "excluded_groups": [
+          {
+            "target": "label_position_change",
+            "rows": 67702,
+            "positive": 3862,
+            "positive_rate": 0.05704410504859531,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_position_change",
+            "rows": 30045,
+            "positive": 30045,
+            "positive_rate": 1.0,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "eval_training_filter": {
+        "method": "target_event_quality_filter",
+        "exclude_red_flag_train_races": false,
+        "overtake_positive_event_type": 1,
+        "overtake_allowed_event_types": [
+          0,
+          1
+        ],
+        "overtake_excluded_event_types": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group_columns": [
+          "season",
+          "circuit_short_name"
+        ],
+        "train_rows_before": 529899,
+        "train_rows_after": 476686,
+        "train_positive_before": 34615,
+        "train_positive_after": 17584,
+        "train_positive_rate_before": 0.06532376924659228,
+        "train_positive_rate_after": 0.03688801433228582,
+        "train_balance_before": {
+          "rows": 529899,
+          "positive": 34615,
+          "negative": 495284,
+          "positive_rate": 0.06532376924659228
+        },
+        "train_balance_after": {
+          "rows": 476686,
+          "positive": 17584,
+          "negative": 459102,
+          "positive_rate": 0.03688801433228582
+        },
+        "excluded_rows": 53213,
+        "excluded_groups": [
+          {
+            "target": "label_position_change",
+            "rows": 38241,
+            "positive": 2059,
+            "positive_rate": 0.05384273423812139,
+            "reason": "control_window_exclusion"
+          },
+          {
+            "target": "label_position_change",
+            "rows": 14972,
+            "positive": 14972,
+            "positive_rate": 1.0,
+            "reason": "uncertain_event_type_exclusion"
+          }
+        ]
+      },
+      "eval_split_report": {
+        "method": "season_holdout",
+        "group_columns": [
+          "season",
+          "session_key",
+          "circuit_short_name"
+        ],
+        "train_years": [
+          2023,
+          2024
+        ],
+        "test_year": 2025,
+        "train_session_keys": [
+          7953,
+          9094,
+          9126,
+          9157,
+          9165,
+          9472,
+          9523,
+          9558,
+          9590,
+          9606
+        ],
+        "test_session_keys": [
+          9896,
+          9912,
+          9947,
+          9979,
+          10014
+        ],
+        "overlap_session_keys": [],
+        "train_balance": {
+          "rows": 476686,
+          "positive": 17584,
+          "negative": 459102,
+          "positive_rate": 0.03688801433228582
+        },
+        "test_balance": {
+          "rows": 263371,
+          "positive": 12083,
+          "negative": 251288,
+          "positive_rate": 0.04587824779493566
+        }
+      },
+      "positive_absolute_risk": "low"
+    }
+  },
+  "event_type_distribution": [
+    {
+      "season": 2023,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "lapping_pass",
+      "rows": 3
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "no_change",
+      "rows": 50378
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "on_track_overtake",
+      "rows": 685
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "pit_related_change",
+      "rows": 568
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "uncertain",
+      "rows": 1010
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monza",
+      "change_reason": "lapping_pass",
+      "rows": 5
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monza",
+      "change_reason": "no_change",
+      "rows": 45624
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monza",
+      "change_reason": "on_track_overtake",
+      "rows": 1339
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monza",
+      "change_reason": "pit_related_change",
+      "rows": 1097
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Monza",
+      "change_reason": "uncertain",
+      "rows": 1927
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "lapping_pass",
+      "rows": 14
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "no_change",
+      "rows": 38704
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "on_track_overtake",
+      "rows": 1306
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "pit_related_change",
+      "rows": 1101
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "restart_overtake",
+      "rows": 11
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "uncertain",
+      "rows": 1938
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "lapping_pass",
+      "rows": 3
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "no_change",
+      "rows": 62586
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "on_track_overtake",
+      "rows": 641
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "pit_related_change",
+      "rows": 324
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "uncertain",
+      "rows": 2312
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Singapore",
+      "change_reason": "lapping_pass",
+      "rows": 227
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Singapore",
+      "change_reason": "no_change",
+      "rows": 76357
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Singapore",
+      "change_reason": "on_track_overtake",
+      "rows": 1297
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Singapore",
+      "change_reason": "pit_related_change",
+      "rows": 105
+    },
+    {
+      "season": 2023,
+      "circuit_short_name": "Singapore",
+      "change_reason": "uncertain",
+      "rows": 3110
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "lapping_pass",
+      "rows": 2
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "no_change",
+      "rows": 71415
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "on_track_overtake",
+      "rows": 151
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "pit_related_change",
+      "rows": 214
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "uncertain",
+      "rows": 187
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monza",
+      "change_reason": "lapping_pass",
+      "rows": 18
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monza",
+      "change_reason": "no_change",
+      "rows": 34695
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monza",
+      "change_reason": "on_track_overtake",
+      "rows": 1625
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monza",
+      "change_reason": "pit_related_change",
+      "rows": 1146
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Monza",
+      "change_reason": "uncertain",
+      "rows": 2222
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "lapping_pass",
+      "rows": 13
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "no_change",
+      "rows": 38120
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "on_track_overtake",
+      "rows": 1212
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "pit_related_change",
+      "rows": 1007
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "uncertain",
+      "rows": 2122
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "lapping_pass",
+      "rows": 134
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "no_change",
+      "rows": 37606
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "on_track_overtake",
+      "rows": 859
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "pit_related_change",
+      "rows": 594
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "uncertain",
+      "rows": 999
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Singapore",
+      "change_reason": "lapping_pass",
+      "rows": 4
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Singapore",
+      "change_reason": "no_change",
+      "rows": 39781
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Singapore",
+      "change_reason": "on_track_overtake",
+      "rows": 1164
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Singapore",
+      "change_reason": "pit_related_change",
+      "rows": 733
+    },
+    {
+      "season": 2024,
+      "circuit_short_name": "Singapore",
+      "change_reason": "uncertain",
+      "rows": 1204
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "lapping_pass",
+      "rows": 2
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "no_change",
+      "rows": 59869
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "on_track_overtake",
+      "rows": 330
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "pit_related_change",
+      "rows": 958
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monte Carlo",
+      "change_reason": "uncertain",
+      "rows": 1619
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monza",
+      "change_reason": "lapping_pass",
+      "rows": 9
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monza",
+      "change_reason": "no_change",
+      "rows": 39433
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monza",
+      "change_reason": "on_track_overtake",
+      "rows": 1151
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monza",
+      "change_reason": "pit_related_change",
+      "rows": 806
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Monza",
+      "change_reason": "uncertain",
+      "rows": 2072
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "lapping_pass",
+      "rows": 24
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "no_change",
+      "rows": 64605
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "on_track_overtake",
+      "rows": 2958
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "pit_related_change",
+      "rows": 1358
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "restart_overtake",
+      "rows": 39
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "change_reason": "uncertain",
+      "rows": 7901
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "lapping_pass",
+      "rows": 7
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "no_change",
+      "rows": 56715
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "on_track_overtake",
+      "rows": 1375
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "pit_related_change",
+      "rows": 928
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "restart_overtake",
+      "rows": 106
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "change_reason": "uncertain",
+      "rows": 3128
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Singapore",
+      "change_reason": "lapping_pass",
+      "rows": 2
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Singapore",
+      "change_reason": "no_change",
+      "rows": 58303
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Singapore",
+      "change_reason": "on_track_overtake",
+      "rows": 1086
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Singapore",
+      "change_reason": "pit_related_change",
+      "rows": 965
+    },
+    {
+      "season": 2025,
+      "circuit_short_name": "Singapore",
+      "change_reason": "uncertain",
+      "rows": 2156
+    }
+  ],
+  "race_control_spot_checks": [
+    {
+      "race_dir": "2023_bahrain_race",
+      "season": 2023,
+      "circuit_short_name": "Sakhir",
+      "race_control_rows": 75,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 2,
+        "virtual_safety_car": 2,
+        "penalty": 7,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "vsc",
+          "start": "2023-03-05T16:10:19",
+          "end": "2023-03-05T16:11:55",
+          "duration_seconds": 96.0
+        }
+      ]
+    },
+    {
+      "race_dir": "2023_monaco_race",
+      "season": 2023,
+      "circuit_short_name": "Monte Carlo",
+      "race_control_rows": 244,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 6,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2023_monza_race",
+      "season": 2023,
+      "circuit_short_name": "Monza",
+      "race_control_rows": 45,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 3,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2023_silverstone_race",
+      "season": 2023,
+      "circuit_short_name": "Silverstone",
+      "race_control_rows": 46,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 3,
+        "virtual_safety_car": 1,
+        "penalty": 1,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "sc",
+          "start": "2023-07-09T14:54:18",
+          "end": "2023-07-09T15:05:22",
+          "duration_seconds": 664.0
+        },
+        {
+          "kind": "vsc",
+          "start": "2023-07-09T14:52:54",
+          "end": "2023-07-09T15:28:27",
+          "duration_seconds": 2133.0
+        }
+      ]
+    },
+    {
+      "race_dir": "2023_singapore_race",
+      "season": 2023,
+      "circuit_short_name": "Singapore",
+      "race_control_rows": 76,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 4,
+        "virtual_safety_car": 2,
+        "penalty": 1,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "sc",
+          "start": "2023-09-17T12:36:41",
+          "end": "2023-09-17T12:41:01",
+          "duration_seconds": 260.0
+        },
+        {
+          "kind": "vsc",
+          "start": "2023-09-17T13:18:06",
+          "end": "2023-09-17T13:21:29",
+          "duration_seconds": 203.0
+        }
+      ]
+    },
+    {
+      "race_dir": "2024_bahrain_race",
+      "season": 2024,
+      "circuit_short_name": "Sakhir",
+      "race_control_rows": 71,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 0,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2024_monaco_race",
+      "season": 2024,
+      "circuit_short_name": "Monte Carlo",
+      "race_control_rows": 122,
+      "keyword_counts": {
+        "red_flag": 1,
+        "safety_car": 1,
+        "virtual_safety_car": 0,
+        "penalty": 1,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "red",
+          "start": "2024-05-26T13:04:08",
+          "end": "2024-05-26T13:44:00.121000",
+          "duration_seconds": 2392.121
+        }
+      ]
+    },
+    {
+      "race_dir": "2024_monza_race",
+      "season": 2024,
+      "circuit_short_name": "Monza",
+      "race_control_rows": 61,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 6,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2024_silverstone_race",
+      "season": 2024,
+      "circuit_short_name": "Silverstone",
+      "race_control_rows": 110,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 0,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2024_singapore_race",
+      "season": 2024,
+      "circuit_short_name": "Singapore",
+      "race_control_rows": 63,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 0,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2025_bahrain_race",
+      "season": 2025,
+      "circuit_short_name": "Sakhir",
+      "race_control_rows": 93,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 4,
+        "virtual_safety_car": 0,
+        "penalty": 6,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "sc",
+          "start": "2025-04-13T15:56:09",
+          "end": "2025-04-13T16:02:20",
+          "duration_seconds": 371.0
+        }
+      ]
+    },
+    {
+      "race_dir": "2025_monaco_race",
+      "season": 2025,
+      "circuit_short_name": "Monte Carlo",
+      "race_control_rows": 198,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 2,
+        "virtual_safety_car": 2,
+        "penalty": 2,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "vsc",
+          "start": "2025-05-25T13:04:43",
+          "end": "2025-05-25T13:09:15",
+          "duration_seconds": 272.0
+        }
+      ]
+    },
+    {
+      "race_dir": "2025_monza_race",
+      "season": 2025,
+      "circuit_short_name": "Monza",
+      "race_control_rows": 73,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 4,
+        "retirement": 0
+      },
+      "control_windows": []
+    },
+    {
+      "race_dir": "2025_silverstone_race",
+      "season": 2025,
+      "circuit_short_name": "Silverstone",
+      "race_control_rows": 158,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 13,
+        "virtual_safety_car": 4,
+        "penalty": 3,
+        "retirement": 0
+      },
+      "control_windows": [
+        {
+          "kind": "vsc",
+          "start": "2025-07-06T14:05:48",
+          "end": "2025-07-06T14:10:18",
+          "duration_seconds": 270.0
+        },
+        {
+          "kind": "vsc",
+          "start": "2025-07-06T14:13:39",
+          "end": "2025-07-06T14:17:04",
+          "duration_seconds": 205.0
+        },
+        {
+          "kind": "sc",
+          "start": "2025-07-06T14:29:14",
+          "end": "2025-07-06T14:38:36",
+          "duration_seconds": 562.0
+        },
+        {
+          "kind": "sc",
+          "start": "2025-07-06T14:41:15",
+          "end": "2025-07-06T14:49:02",
+          "duration_seconds": 467.0
+        }
+      ]
+    },
+    {
+      "race_dir": "2025_singapore_race",
+      "season": 2025,
+      "circuit_short_name": "Singapore",
+      "race_control_rows": 121,
+      "keyword_counts": {
+        "red_flag": 0,
+        "safety_car": 0,
+        "virtual_safety_car": 0,
+        "penalty": 0,
+        "retirement": 0
+      },
+      "control_windows": []
+    }
+  ],
+  "feature_importance": {
+    "label_overtake": {
+      "top_10": [
+        {
+          "feature": "gap_ahead",
+          "gain": 3302356.225646019,
+          "rank": 1
+        },
+        {
+          "feature": "tyre_age_delta",
+          "gain": 749753.5580368042,
+          "rank": 2
+        },
+        {
+          "feature": "track_temperature",
+          "gain": 530178.894739151,
+          "rank": 3
+        },
+        {
+          "feature": "tyre_age",
+          "gain": 525444.7489109039,
+          "rank": 4
+        },
+        {
+          "feature": "air_temperature",
+          "gain": 344853.0027217865,
+          "rank": 5
+        },
+        {
+          "feature": "position",
+          "gain": 338937.1676044464,
+          "rank": 6
+        },
+        {
+          "feature": "humidity",
+          "gain": 307870.67803382874,
+          "rank": 7
+        },
+        {
+          "feature": "speed_delta",
+          "gain": 185202.72790050507,
+          "rank": 8
+        },
+        {
+          "feature": "gap_trend",
+          "gain": 180043.0645418167,
+          "rank": 9
+        },
+        {
+          "feature": "track_progress_cos",
+          "gain": 177980.1837902069,
+          "rank": 10
+        }
+      ],
+      "watched_features": {
+        "season": {
+          "feature": "season",
+          "gain": 98832.78696250916,
+          "rank": 14
+        },
+        "circuit_key": {
+          "feature": "circuit_key",
+          "gain": 82245.25776863098,
+          "rank": 16
+        },
+        "circuit_type_code": {
+          "feature": "circuit_type_code",
+          "gain": 111008.04092407227,
+          "rank": 12
+        },
+        "track_progress": {
+          "feature": "track_progress",
+          "gain": 120088.06590938568,
+          "rank": 11
+        },
+        "segment": {
+          "feature": "segment",
+          "gain": 14541.730716705322,
+          "rank": 20
+        },
+        "sector": {
+          "feature": "sector",
+          "gain": 4745.37833404541,
+          "rank": 21
+        }
+      }
+    },
+    "label_position_gain": {
+      "top_10": [
+        {
+          "feature": "gap_ahead",
+          "gain": 2381888.601966858,
+          "rank": 1
+        },
+        {
+          "feature": "tyre_age_delta",
+          "gain": 935562.3150959015,
+          "rank": 2
+        },
+        {
+          "feature": "speed_delta",
+          "gain": 585405.5207633972,
+          "rank": 3
+        },
+        {
+          "feature": "track_temperature",
+          "gain": 580527.3145275116,
+          "rank": 4
+        },
+        {
+          "feature": "tyre_age",
+          "gain": 558414.8495826721,
+          "rank": 5
+        },
+        {
+          "feature": "track_progress",
+          "gain": 459558.70496177673,
+          "rank": 6
+        },
+        {
+          "feature": "air_temperature",
+          "gain": 382739.430185318,
+          "rank": 7
+        },
+        {
+          "feature": "position_delta",
+          "gain": 378286.915977478,
+          "rank": 8
+        },
+        {
+          "feature": "position",
+          "gain": 370704.4314842224,
+          "rank": 9
+        },
+        {
+          "feature": "humidity",
+          "gain": 295883.1460647583,
+          "rank": 10
+        }
+      ],
+      "watched_features": {
+        "season": {
+          "feature": "season",
+          "gain": 82057.66682434082,
+          "rank": 17
+        },
+        "circuit_key": {
+          "feature": "circuit_key",
+          "gain": 187952.33085250854,
+          "rank": 13
+        },
+        "circuit_type_code": {
+          "feature": "circuit_type_code",
+          "gain": 171103.12972259521,
+          "rank": 14
+        },
+        "track_progress": {
+          "feature": "track_progress",
+          "gain": 459558.70496177673,
+          "rank": 6
+        },
+        "segment": {
+          "feature": "segment",
+          "gain": 67055.94816207886,
+          "rank": 18
+        },
+        "sector": {
+          "feature": "sector",
+          "gain": 43874.56032562256,
+          "rank": 19
+        }
+      }
+    },
+    "label_position_loss": {
+      "top_10": [
+        {
+          "feature": "track_progress_sin",
+          "gain": 1971170.2181529999,
+          "rank": 1
+        },
+        {
+          "feature": "track_progress_cos",
+          "gain": 1805777.7442378998,
+          "rank": 2
+        },
+        {
+          "feature": "tyre_age",
+          "gain": 1493579.9439191818,
+          "rank": 3
+        },
+        {
+          "feature": "speed",
+          "gain": 796437.8229112625,
+          "rank": 4
+        },
+        {
+          "feature": "humidity",
+          "gain": 584217.487446785,
+          "rank": 5
+        },
+        {
+          "feature": "air_temperature",
+          "gain": 527473.1162900925,
+          "rank": 6
+        },
+        {
+          "feature": "track_temperature",
+          "gain": 515227.2393951416,
+          "rank": 7
+        },
+        {
+          "feature": "position",
+          "gain": 470137.91197776794,
+          "rank": 8
+        },
+        {
+          "feature": "tyre_age_delta",
+          "gain": 382183.08428668976,
+          "rank": 9
+        },
+        {
+          "feature": "gap_ahead",
+          "gain": 353083.50599098206,
+          "rank": 10
+        }
+      ],
+      "watched_features": {
+        "season": {
+          "feature": "season",
+          "gain": 204553.29961681366,
+          "rank": 13
+        },
+        "circuit_key": {
+          "feature": "circuit_key",
+          "gain": 54543.732540130615,
+          "rank": 17
+        },
+        "circuit_type_code": {
+          "feature": "circuit_type_code",
+          "gain": 158593.83475208282,
+          "rank": 15
+        },
+        "track_progress": {
+          "feature": "track_progress",
+          "gain": 168947.07602596283,
+          "rank": 14
+        },
+        "segment": {
+          "feature": "segment",
+          "gain": 7008.308563232422,
+          "rank": 19
+        },
+        "sector": {
+          "feature": "sector",
+          "gain": 46997.135818481445,
+          "rank": 18
+        }
+      }
+    },
+    "label_position_change": {
+      "top_10": [
+        {
+          "feature": "gap_ahead",
+          "gain": 1324161.9241218567,
+          "rank": 1
+        },
+        {
+          "feature": "track_progress",
+          "gain": 1024869.2086105347,
+          "rank": 2
+        },
+        {
+          "feature": "tyre_age",
+          "gain": 913229.4295520782,
+          "rank": 3
+        },
+        {
+          "feature": "tyre_age_delta",
+          "gain": 857555.6607646942,
+          "rank": 4
+        },
+        {
+          "feature": "track_temperature",
+          "gain": 615487.5308570862,
+          "rank": 5
+        },
+        {
+          "feature": "position_delta",
+          "gain": 553188.0749359131,
+          "rank": 6
+        },
+        {
+          "feature": "air_temperature",
+          "gain": 443092.0506668091,
+          "rank": 7
+        },
+        {
+          "feature": "humidity",
+          "gain": 388762.932598114,
+          "rank": 8
+        },
+        {
+          "feature": "speed_delta",
+          "gain": 365895.5100803375,
+          "rank": 9
+        },
+        {
+          "feature": "position",
+          "gain": 343127.277173996,
+          "rank": 10
+        }
+      ],
+      "watched_features": {
+        "season": {
+          "feature": "season",
+          "gain": 76148.14988708496,
+          "rank": 17
+        },
+        "circuit_key": {
+          "feature": "circuit_key",
+          "gain": 86930.44737243652,
+          "rank": 16
+        },
+        "circuit_type_code": {
+          "feature": "circuit_type_code",
+          "gain": 127050.85175323486,
+          "rank": 15
+        },
+        "track_progress": {
+          "feature": "track_progress",
+          "gain": 1024869.2086105347,
+          "rank": 2
+        },
+        "segment": {
+          "feature": "segment",
+          "gain": 7479.681550979614,
+          "rank": 24
+        },
+        "sector": {
+          "feature": "sector",
+          "gain": 48575.871826171875,
+          "rank": 18
+        }
+      }
+    }
+  },
+  "notes": [
+    "class_weight=balanced is enabled in train_races.make_model().",
+    "No retraining is needed for this audit/export change because labels and features were not changed.",
+    "Retrain all affected targets if feature order, feature values, labels, or quality filters change."
+  ]
+}

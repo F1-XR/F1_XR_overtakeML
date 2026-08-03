@@ -1,0 +1,12 @@
+# Python 3.11+ 권장. 설치: pip install -r requirements.txt
+# ── 데이터 수집·전처리 ──
+requests>=2.31
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0
+# ── 학습·평가 ──
+scikit-learn>=1.3      # isotonic 보정, 지표(ROC/PR-AUC/Brier)
+lightgbm>=4.0          # 예측 모델(gradient boosting)
+# ── 시각화 ──
+matplotlib>=3.7
+pillow>=10.0
