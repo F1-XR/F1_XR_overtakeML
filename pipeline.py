@@ -91,6 +91,13 @@ def _collect_driver_endpoint(session_key, name):
             })
         except requests.HTTPError as e:
             status_code = e.response.status_code if e.response is not None else None
+            if status_code in {401, 403}:
+                # OpenF1 may gate historical high-volume telemetry. A partially
+                # populated driver set would bias training by driver, so keep the
+                # whole endpoint explicitly unavailable for this race.
+                rows_all = []
+                print(f"[collect] {name}: access gated ({status_code}); using 0 rows for all drivers")
+                break
             if status_code not in {404, 422}:
                 raise
             rows = []

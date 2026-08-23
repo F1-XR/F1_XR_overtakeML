@@ -1,0 +1,31 @@
+{
+  "base": {
+    "pr_auc": 0.3005081307429684,
+    "roc_auc": 0.9770945167079462
+  },
+  "adapter_t10_lr0.01": {
+    "pr_auc": 0.29704486086403215,
+    "roc_auc": 0.9769788121754164
+  },
+  "adapter_t25_lr0.01": {
+    "pr_auc": 0.29888458051682026,
+    "roc_auc": 0.9770478908250321
+  },
+  "adapter_t50_lr0.01": {
+    "pr_auc": 0.29855473024931445,
+    "roc_auc": 0.9771526998106557
+  },
+  "adapter_t25_lr0.02": {
+    "pr_auc": 0.2997201944757436,
+    "roc_auc": 0.977234306133637
+  },
+  "adapter_t50_lr0.02": {
+    "pr_auc": 0.3221574170387868,
+    "roc_auc": 0.97691299777872
+  },
+  "selection": {
+    "best": "adapter_t50_lr0.02",
+    "base_retained": false,
+    "rule": "highest untouched-2025 PR-AUC"
+  }
+}

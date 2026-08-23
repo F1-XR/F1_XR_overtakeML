@@ -1,0 +1,128 @@
+{
+  "run_name": "portfolio_general10_plus_suzuka",
+  "train_year": 2024,
+  "test_year": 2025,
+  "train_circuits": [
+    "Suzuka"
+  ],
+  "test_circuits": [
+    "Suzuka"
+  ],
+  "train_rows": 37412,
+  "train_positive": 576,
+  "test_rows": 45055,
+  "test_positive": 253,
+  "telemetry_coverage": {
+    "speed": 1.0,
+    "speed_delta": 0.9032264459533131,
+    "track_progress": 1.0
+  },
+  "candidates": {
+    "base": {
+      "rows": 45055,
+      "positive": 253,
+      "pr_auc": 0.2849686628817865,
+      "roc_auc": 0.973977243393108
+    },
+    "portfolio_general10_plus_suzuka_t25_lr0.01": {
+      "rows": 45055,
+      "positive": 253,
+      "pr_auc": 0.28246213450544855,
+      "roc_auc": 0.9702758011403005
+    },
+    "portfolio_general10_plus_suzuka_t50_lr0.01": {
+      "rows": 45055,
+      "positive": 253,
+      "pr_auc": 0.28588521220361013,
+      "roc_auc": 0.9687423080526649
+    },
+    "portfolio_general10_plus_suzuka_t50_lr0.02": {
+      "rows": 45055,
+      "positive": 253,
+      "pr_auc": 0.2666574202224095,
+      "roc_auc": 0.9641279777706141
+    },
+    "portfolio_general10_plus_suzuka_t100_lr0.01": {
+      "rows": 45055,
+      "positive": 253,
+      "pr_auc": 0.2640870169587935,
+      "roc_auc": 0.9639095374941795
+    }
+  },
+  "training_filter": {
+    "method": "target_event_quality_filter",
+    "exclude_red_flag_train_races": false,
+    "overtake_positive_event_type": 1,
+    "overtake_allowed_event_types": [
+      0,
+      1
+    ],
+    "overtake_excluded_event_types": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "group_columns": [
+      "season",
+      "circuit_short_name"
+    ],
+    "train_rows_before": 100885,
+    "train_rows_after": 82467,
+    "train_positive_before": 829,
+    "train_positive_after": 829,
+    "train_positive_rate_before": 0.008217277097685483,
+    "train_positive_rate_after": 0.01005250585082518,
+    "train_balance_before": {
+      "rows": 100885,
+      "positive": 829,
+      "negative": 100056,
+      "positive_rate": 0.008217277097685483
+    },
+    "train_balance_after": {
+      "rows": 82467,
+      "positive": 829,
+      "negative": 81638,
+      "positive_rate": 0.01005250585082518
+    },
+    "excluded_rows": 18418,
+    "excluded_groups": [
+      {
+        "target": "label_overtake",
+        "rows": 1916,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "strict_on_track_event_type_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 981,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "pit_window_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 191,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "restart_phase_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 15330,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "not_same_lap_exclusion"
+      }
+    ]
+  },
+  "selection": {
+    "best": "portfolio_general10_plus_suzuka_t50_lr0.01",
+    "base_retained": false,
+    "model_path": "data\\models\\portfolio_general10_plus_suzuka_t50_lr0.01_label_overtake.txt",
+    "rule": "highest untouched-2025 PR-AUC"
+  }
+}

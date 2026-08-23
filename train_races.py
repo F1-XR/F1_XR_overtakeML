@@ -82,21 +82,32 @@ class RaceSpec:
 
 RACES = {
     "bahrain": RaceSpec("Bahrain", "Bahrain", "Sakhir", "bahrain"),
+    "austin": RaceSpec("Austin", "United States", "Austin", "austin"),
+    "hungary": RaceSpec("Hungaroring", "Hungary", "Hungaroring", "hungary"),
+    "jeddah": RaceSpec("Jeddah", "Saudi Arabia", "Jeddah", "jeddah"),
+    "melbourne": RaceSpec("Melbourne", "Australia", "Melbourne", "melbourne"),
     "monza": RaceSpec("Monza", "Italy", "Monza", "monza"),
     "monaco": RaceSpec("Monaco", "Monaco", "Monte Carlo", "monaco"),
     "spa": RaceSpec("Spa-Francorchamps", "Belgium", "Spa-Francorchamps", "spa"),
     "silverstone": RaceSpec("Silverstone", "United Kingdom", "Silverstone", "silverstone"),
     "singapore": RaceSpec("Singapore", "Singapore", "Singapore", "singapore"),
+    "suzuka": RaceSpec("Suzuka", "Japan", "Suzuka", "suzuka"),
 }
 RACE_GROUPS = {
     "bahrain": ["bahrain"],
     "initial": ["bahrain", "monza", "monaco", "silverstone", "singapore"],
     "initial_spa": ["bahrain", "monza", "monaco", "silverstone", "singapore", "spa"],
+    "initial_suzuka": ["bahrain", "monza", "monaco", "silverstone", "singapore", "suzuka"],
+    "portfolio_10": [
+        "bahrain", "monza", "monaco", "silverstone", "singapore",
+        "spa", "jeddah", "hungary", "austin", "melbourne",
+    ],
 }
 
 
 def main():
     args = parse_args()
+    C.HORIZON_S = float(args.horizon)
     years = args.years or YEARS
     races = select_races(args.races)
     run_name = args.run_name or build_run_name(races, years, args.mode)
@@ -145,6 +156,8 @@ def parse_args():
     parser.add_argument("--run-name")
     parser.add_argument("--collect-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--horizon", type=float, default=C.HORIZON_S,
+                        help="Prediction label horizon in seconds (default: config.HORIZON_S)")
     return parser.parse_args()
 
 
@@ -172,8 +185,11 @@ def build_run_name(races, years, mode):
 def collect_race(year, race):
     set_context(year, race)
     meta_path = C.RAW_DIR / "session_meta.json"
-    meta = resolve_session(year, race)
-    meta_path.write_text(json.dumps(meta, indent=2))
+    if meta_path.exists():
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    else:
+        meta = resolve_session(year, race)
+        meta_path.write_text(json.dumps(meta, indent=2), encoding="utf-8")
 
     if all((C.RAW_DIR / f"{name}.json").exists() for name in ENDPOINTS):
         print(f"[cache] {year} {race.name} raw data exists. session_key={meta['session_key']}")

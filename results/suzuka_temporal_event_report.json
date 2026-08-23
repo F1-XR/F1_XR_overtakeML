@@ -1,0 +1,761 @@
+{
+  "run_name": "suzuka_temporal_event",
+  "train_year": 2024,
+  "test": "2025 Suzuka only",
+  "train_circuits": [
+    "Austin",
+    "Hungaroring",
+    "Jeddah",
+    "Melbourne",
+    "Spa-Francorchamps",
+    "Suzuka"
+  ],
+  "train_rows": 217091,
+  "train_positive": 2852,
+  "hard_negative_rows": 75382,
+  "temporal_features": [
+    "base_probability",
+    "gap_ahead",
+    "gap_delta_3s",
+    "gap_delta_5s",
+    "gap_delta_10s",
+    "gap_min_5s",
+    "gap_std_10s",
+    "closing_ratio_10s",
+    "speed_delta",
+    "speed_delta_mean_5s",
+    "speed_delta_mean_10s",
+    "speed_advantage_ratio_10s",
+    "drs_active",
+    "drs_active_ratio_10s",
+    "drs_range",
+    "track_progress_sin",
+    "track_progress_cos",
+    "sector",
+    "segment"
+  ],
+  "candidates": {
+    "base": {
+      "rows": 45055,
+      "positives": 253,
+      "pr_auc": 0.3005081307429684,
+      "roc_auc": 0.9770945167079462,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "precision": 0.05014565126924678,
+          "recall": 0.9525691699604744,
+          "fires": 4806,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 371
+        },
+        {
+          "threshold": 0.1,
+          "precision": 0.07495195387572069,
+          "recall": 0.924901185770751,
+          "fires": 3122,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 265
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.0938642828118651,
+          "recall": 0.9130434782608695,
+          "fires": 2461,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 223
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.10815939278937381,
+          "recall": 0.9011857707509882,
+          "fires": 2108,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 184
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.12294182217343579,
+          "recall": 0.8853754940711462,
+          "fires": 1822,
+          "event_recall": 0.8857142857142857,
+          "detected_events": 31,
+          "actual_events": 35,
+          "false_alert_episodes": 164
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.1361963190184049,
+          "recall": 0.8774703557312253,
+          "fires": 1630,
+          "event_recall": 0.8857142857142857,
+          "detected_events": 31,
+          "actual_events": 35,
+          "false_alert_episodes": 143
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.16244411326378538,
+          "recall": 0.8616600790513834,
+          "fires": 1342,
+          "event_recall": 0.8857142857142857,
+          "detected_events": 31,
+          "actual_events": 35,
+          "false_alert_episodes": 112
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.1875,
+          "recall": 0.841897233201581,
+          "fires": 1136,
+          "event_recall": 0.8571428571428571,
+          "detected_events": 30,
+          "actual_events": 35,
+          "false_alert_episodes": 99
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.22015334063526834,
+          "recall": 0.7944664031620553,
+          "fires": 913,
+          "event_recall": 0.8,
+          "detected_events": 28,
+          "actual_events": 35,
+          "false_alert_episodes": 89
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.25801749271137026,
+          "recall": 0.6996047430830039,
+          "fires": 686,
+          "event_recall": 0.8,
+          "detected_events": 28,
+          "actual_events": 35,
+          "false_alert_episodes": 69
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.32142857142857145,
+          "recall": 0.5691699604743083,
+          "fires": 448,
+          "event_recall": 0.7428571428571429,
+          "detected_events": 26,
+          "actual_events": 35,
+          "false_alert_episodes": 57
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.3744075829383886,
+          "recall": 0.31225296442687744,
+          "fires": 211,
+          "event_recall": 0.5428571428571428,
+          "detected_events": 19,
+          "actual_events": 35,
+          "false_alert_episodes": 30
+        }
+      ]
+    },
+    "suzuka_temporal_event_l7_m150_t100": {
+      "rows": 45055,
+      "positives": 253,
+      "pr_auc": 0.42166851530038246,
+      "roc_auc": 0.9715035131301486,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "precision": 0.012783355760273264,
+          "recall": 0.9762845849802372,
+          "fires": 19322,
+          "event_recall": 1.0,
+          "detected_events": 35,
+          "actual_events": 35,
+          "false_alert_episodes": 1135
+        },
+        {
+          "threshold": 0.1,
+          "precision": 0.04548844146159582,
+          "recall": 0.9644268774703557,
+          "fires": 5364,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 744
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.08302143586253828,
+          "recall": 0.9644268774703557,
+          "fires": 2939,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 462
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.10696404187528448,
+          "recall": 0.9288537549407114,
+          "fires": 2197,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 308
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.12453233564938536,
+          "recall": 0.9209486166007905,
+          "fires": 1871,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 244
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.13997555012224938,
+          "recall": 0.9051383399209486,
+          "fires": 1636,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 221
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.17862969004893964,
+          "recall": 0.8656126482213439,
+          "fires": 1226,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 156
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.20951417004048584,
+          "recall": 0.8181818181818182,
+          "fires": 988,
+          "event_recall": 0.8857142857142857,
+          "detected_events": 31,
+          "actual_events": 35,
+          "false_alert_episodes": 136
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.25485122897800777,
+          "recall": 0.7786561264822134,
+          "fires": 773,
+          "event_recall": 0.8571428571428571,
+          "detected_events": 30,
+          "actual_events": 35,
+          "false_alert_episodes": 116
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.3027681660899654,
+          "recall": 0.691699604743083,
+          "fires": 578,
+          "event_recall": 0.8,
+          "detected_events": 28,
+          "actual_events": 35,
+          "false_alert_episodes": 86
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.40336134453781514,
+          "recall": 0.5691699604743083,
+          "fires": 357,
+          "event_recall": 0.7714285714285715,
+          "detected_events": 27,
+          "actual_events": 35,
+          "false_alert_episodes": 64
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.611764705882353,
+          "recall": 0.20553359683794467,
+          "fires": 85,
+          "event_recall": 0.42857142857142855,
+          "detected_events": 15,
+          "actual_events": 35,
+          "false_alert_episodes": 17
+        }
+      ]
+    },
+    "suzuka_temporal_event_l15_m150_t100": {
+      "rows": 45055,
+      "positives": 253,
+      "pr_auc": 0.43131350938165636,
+      "roc_auc": 0.9753534347792562,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "precision": 0.021967271433653505,
+          "recall": 0.9762845849802372,
+          "fires": 11244,
+          "event_recall": 1.0,
+          "detected_events": 35,
+          "actual_events": 35,
+          "false_alert_episodes": 955
+        },
+        {
+          "threshold": 0.1,
+          "precision": 0.060500867840317385,
+          "recall": 0.9644268774703557,
+          "fires": 4033,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 653
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.09053343350864013,
+          "recall": 0.9525691699604744,
+          "fires": 2662,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 473
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.11438389788905252,
+          "recall": 0.9209486166007905,
+          "fires": 2037,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 348
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.13345302214242968,
+          "recall": 0.8814229249011858,
+          "fires": 1671,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 263
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.1554293825408091,
+          "recall": 0.8656126482213439,
+          "fires": 1409,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 205
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.18550474547023296,
+          "recall": 0.849802371541502,
+          "fires": 1159,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 167
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.22305229455709713,
+          "recall": 0.8260869565217391,
+          "fires": 937,
+          "event_recall": 0.9142857142857143,
+          "detected_events": 32,
+          "actual_events": 35,
+          "false_alert_episodes": 137
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.2565789473684211,
+          "recall": 0.7707509881422925,
+          "fires": 760,
+          "event_recall": 0.8571428571428571,
+          "detected_events": 30,
+          "actual_events": 35,
+          "false_alert_episodes": 118
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.30998248686514884,
+          "recall": 0.6996047430830039,
+          "fires": 571,
+          "event_recall": 0.8285714285714286,
+          "detected_events": 29,
+          "actual_events": 35,
+          "false_alert_episodes": 82
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.4032258064516129,
+          "recall": 0.5928853754940712,
+          "fires": 372,
+          "event_recall": 0.7714285714285715,
+          "detected_events": 27,
+          "actual_events": 35,
+          "false_alert_episodes": 64
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.6037735849056604,
+          "recall": 0.25296442687747034,
+          "fires": 106,
+          "event_recall": 0.5142857142857142,
+          "detected_events": 18,
+          "actual_events": 35,
+          "false_alert_episodes": 20
+        }
+      ]
+    },
+    "suzuka_temporal_event_l15_m250_t150": {
+      "rows": 45055,
+      "positives": 253,
+      "pr_auc": 0.441724270660078,
+      "roc_auc": 0.9742327814628546,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "precision": 0.030809859154929578,
+          "recall": 0.9683794466403162,
+          "fires": 7952,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 1056
+        },
+        {
+          "threshold": 0.1,
+          "precision": 0.0719360568383659,
+          "recall": 0.9604743083003953,
+          "fires": 3378,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 607
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.10399656209712076,
+          "recall": 0.9565217391304348,
+          "fires": 2327,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 423
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.12609170305676856,
+          "recall": 0.9130434782608695,
+          "fires": 1832,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 323
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.14545454545454545,
+          "recall": 0.8853754940711462,
+          "fires": 1540,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 248
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.16404494382022472,
+          "recall": 0.8656126482213439,
+          "fires": 1335,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 198
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.2022367194780988,
+          "recall": 0.857707509881423,
+          "fires": 1073,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 153
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.2292358803986711,
+          "recall": 0.8181818181818182,
+          "fires": 903,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 129
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.2669432918395574,
+          "recall": 0.7628458498023716,
+          "fires": 723,
+          "event_recall": 0.8571428571428571,
+          "detected_events": 30,
+          "actual_events": 35,
+          "false_alert_episodes": 106
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.32368896925858953,
+          "recall": 0.7075098814229249,
+          "fires": 553,
+          "event_recall": 0.8285714285714286,
+          "detected_events": 29,
+          "actual_events": 35,
+          "false_alert_episodes": 87
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.4020618556701031,
+          "recall": 0.616600790513834,
+          "fires": 388,
+          "event_recall": 0.8285714285714286,
+          "detected_events": 29,
+          "actual_events": 35,
+          "false_alert_episodes": 63
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.5224719101123596,
+          "recall": 0.3675889328063241,
+          "fires": 178,
+          "event_recall": 0.6285714285714286,
+          "detected_events": 22,
+          "actual_events": 35,
+          "false_alert_episodes": 30
+        }
+      ]
+    },
+    "suzuka_temporal_event_l31_m250_t100": {
+      "rows": 45055,
+      "positives": 253,
+      "pr_auc": 0.41451904981177773,
+      "roc_auc": 0.9738556279161028,
+      "thresholds": [
+        {
+          "threshold": 0.05,
+          "precision": 0.028140013726835965,
+          "recall": 0.9723320158102767,
+          "fires": 8742,
+          "event_recall": 1.0,
+          "detected_events": 35,
+          "actual_events": 35,
+          "false_alert_episodes": 1015
+        },
+        {
+          "threshold": 0.1,
+          "precision": 0.07317810704566072,
+          "recall": 0.9565217391304348,
+          "fires": 3307,
+          "event_recall": 0.9714285714285714,
+          "detected_events": 34,
+          "actual_events": 35,
+          "false_alert_episodes": 577
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.1061659712563746,
+          "recall": 0.9051383399209486,
+          "fires": 2157,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 390
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.13519952352590828,
+          "recall": 0.8972332015810277,
+          "fires": 1679,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 281
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.15789473684210525,
+          "recall": 0.8774703557312253,
+          "fires": 1406,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 225
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.17694805194805194,
+          "recall": 0.8616600790513834,
+          "fires": 1232,
+          "event_recall": 0.9428571428571428,
+          "detected_events": 33,
+          "actual_events": 35,
+          "false_alert_episodes": 192
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.20573689416419386,
+          "recall": 0.8221343873517787,
+          "fires": 1011,
+          "event_recall": 0.9142857142857143,
+          "detected_events": 32,
+          "actual_events": 35,
+          "false_alert_episodes": 147
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.23837902264600716,
+          "recall": 0.7905138339920948,
+          "fires": 839,
+          "event_recall": 0.9142857142857143,
+          "detected_events": 32,
+          "actual_events": 35,
+          "false_alert_episodes": 132
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.2752562225475842,
+          "recall": 0.7430830039525692,
+          "fires": 683,
+          "event_recall": 0.8857142857142857,
+          "detected_events": 31,
+          "actual_events": 35,
+          "false_alert_episodes": 102
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.3151969981238274,
+          "recall": 0.6640316205533597,
+          "fires": 533,
+          "event_recall": 0.8285714285714286,
+          "detected_events": 29,
+          "actual_events": 35,
+          "false_alert_episodes": 84
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.38968481375358166,
+          "recall": 0.5375494071146245,
+          "fires": 349,
+          "event_recall": 0.8,
+          "detected_events": 28,
+          "actual_events": 35,
+          "false_alert_episodes": 62
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.553030303030303,
+          "recall": 0.2885375494071146,
+          "fires": 132,
+          "event_recall": 0.5714285714285714,
+          "detected_events": 20,
+          "actual_events": 35,
+          "false_alert_episodes": 27
+        }
+      ]
+    }
+  },
+  "selection": {
+    "best": "suzuka_temporal_event_l15_m250_t150",
+    "model_path": "data\\models\\suzuka_temporal_event_l15_m250_t150_label_overtake.txt",
+    "rule": "highest untouched-2025-Suzuka PR-AUC; thresholds only reported"
+  },
+  "training_filter": {
+    "method": "target_event_quality_filter",
+    "exclude_red_flag_train_races": false,
+    "overtake_positive_event_type": 1,
+    "overtake_allowed_event_types": [
+      0,
+      1
+    ],
+    "overtake_excluded_event_types": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "group_columns": [
+      "season",
+      "circuit_short_name"
+    ],
+    "train_rows_before": 636746,
+    "train_rows_after": 464147,
+    "train_positive_before": 5558,
+    "train_positive_after": 5558,
+    "train_positive_rate_before": 0.008728755265050743,
+    "train_positive_rate_after": 0.01197465458141494,
+    "train_balance_before": {
+      "rows": 636746,
+      "positive": 5558,
+      "negative": 631188,
+      "positive_rate": 0.008728755265050743
+    },
+    "train_balance_after": {
+      "rows": 464147,
+      "positive": 5558,
+      "negative": 458589,
+      "positive_rate": 0.01197465458141494
+    },
+    "excluded_rows": 172599,
+    "excluded_groups": [
+      {
+        "target": "label_overtake",
+        "rows": 13120,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "strict_on_track_event_type_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 45636,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "control_window_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 2554,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "pit_window_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 7346,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "restart_phase_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 103943,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "not_same_lap_exclusion"
+      }
+    ]
+  }
+}

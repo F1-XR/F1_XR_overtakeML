@@ -15,7 +15,9 @@ BATTLE_GAP_S = 2.0    # 배틀 상황 필터: 앞차 gap 이 이 값 이하인 �
 # --- 수집 옵션 ---
 FETCH_CAR_DATA = False   # drs/속도(car_data). 매우 큼. 코어가 돌아간 뒤 True 로.
 FETCH_LOCATION_DATA = False
-REQUEST_SLEEP = 0.4      # OpenF1 rate limit(3req/s) 준수용 요청 간 대기
+# Free historical access is also limited to 30 requests/minute. Keep a small
+# margin so long driver-by-driver telemetry collections do not get throttled.
+REQUEST_SLEEP = 2.1
 
 # --- 경로 (프로젝트 폴더 기준 상대경로 -> 어디로 옮겨도 동작) ---
 PROJECT_ROOT = Path(__file__).resolve().parent

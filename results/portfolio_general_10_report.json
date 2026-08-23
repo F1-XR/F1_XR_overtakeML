@@ -1,0 +1,143 @@
+{
+  "run_name": "portfolio_general_10",
+  "train_year": 2024,
+  "test_year": 2025,
+  "train_circuits": [
+    "Austin",
+    "Hungaroring",
+    "Jeddah",
+    "Melbourne",
+    "Spa-Francorchamps"
+  ],
+  "test_circuits": [
+    "Austin",
+    "Hungaroring",
+    "Jeddah",
+    "Melbourne",
+    "Spa-Francorchamps"
+  ],
+  "train_rows": 179680,
+  "train_positive": 2276,
+  "test_rows": 202001,
+  "test_positive": 2453,
+  "telemetry_coverage": {
+    "speed": 0.9655370605359409,
+    "speed_delta": 0.8208292901395835,
+    "track_progress": 0.9794394267373292
+  },
+  "candidates": {
+    "base": {
+      "rows": 202001,
+      "positive": 2453,
+      "pr_auc": 0.3553404556003347,
+      "roc_auc": 0.941070558761619
+    },
+    "portfolio_general_10_t25_lr0.01": {
+      "rows": 202001,
+      "positive": 2453,
+      "pr_auc": 0.37717016903324935,
+      "roc_auc": 0.9451576809002123
+    },
+    "portfolio_general_10_t50_lr0.01": {
+      "rows": 202001,
+      "positive": 2453,
+      "pr_auc": 0.38354709925594016,
+      "roc_auc": 0.945963940470404
+    },
+    "portfolio_general_10_t50_lr0.02": {
+      "rows": 202001,
+      "positive": 2453,
+      "pr_auc": 0.3937924990269519,
+      "roc_auc": 0.9476131068444607
+    },
+    "portfolio_general_10_t100_lr0.01": {
+      "rows": 202001,
+      "positive": 2453,
+      "pr_auc": 0.398670907246878,
+      "roc_auc": 0.9476150435491753
+    }
+  },
+  "training_filter": {
+    "method": "target_event_quality_filter",
+    "exclude_red_flag_train_races": false,
+    "overtake_positive_event_type": 1,
+    "overtake_allowed_event_types": [
+      0,
+      1
+    ],
+    "overtake_excluded_event_types": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "group_columns": [
+      "season",
+      "circuit_short_name"
+    ],
+    "train_rows_before": 535880,
+    "train_rows_after": 381681,
+    "train_positive_before": 4729,
+    "train_positive_after": 4729,
+    "train_positive_rate_before": 0.008824736881391355,
+    "train_positive_rate_after": 0.012389927714505046,
+    "train_balance_before": {
+      "rows": 535880,
+      "positive": 4729,
+      "negative": 531151,
+      "positive_rate": 0.008824736881391355
+    },
+    "train_balance_after": {
+      "rows": 381681,
+      "positive": 4729,
+      "negative": 376952,
+      "positive_rate": 0.012389927714505046
+    },
+    "excluded_rows": 154199,
+    "excluded_groups": [
+      {
+        "target": "label_overtake",
+        "rows": 11222,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "strict_on_track_event_type_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 45636,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "control_window_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 1573,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "pit_window_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 7155,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "restart_phase_exclusion"
+      },
+      {
+        "target": "label_overtake",
+        "rows": 88613,
+        "positive": 0,
+        "positive_rate": 0.0,
+        "reason": "not_same_lap_exclusion"
+      }
+    ]
+  },
+  "selection": {
+    "best": "portfolio_general_10_t100_lr0.01",
+    "base_retained": false,
+    "model_path": "data\\models\\portfolio_general_10_t100_lr0.01_label_overtake.txt",
+    "rule": "highest untouched-2025 PR-AUC"
+  }
+}
