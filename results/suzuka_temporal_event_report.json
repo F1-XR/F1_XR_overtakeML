@@ -38,7 +38,7 @@
     "base": {
       "rows": 45055,
       "positives": 253,
-      "pr_auc": 0.3005081307429684,
+      "pr_auc": 0.30050813074296834,
       "roc_auc": 0.9770945167079462,
       "thresholds": [
         {
@@ -49,7 +49,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 371
+          "false_alert_episodes": 371,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.1,
@@ -59,7 +60,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 265
+          "false_alert_episodes": 265,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.15,
@@ -69,7 +71,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 223
+          "false_alert_episodes": 223,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.2,
@@ -79,7 +82,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 184
+          "false_alert_episodes": 184,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.25,
@@ -89,7 +93,8 @@
           "event_recall": 0.8857142857142857,
           "detected_events": 31,
           "actual_events": 35,
-          "false_alert_episodes": 164
+          "false_alert_episodes": 164,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.3,
@@ -99,7 +104,8 @@
           "event_recall": 0.8857142857142857,
           "detected_events": 31,
           "actual_events": 35,
-          "false_alert_episodes": 143
+          "false_alert_episodes": 143,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.4,
@@ -109,7 +115,8 @@
           "event_recall": 0.8857142857142857,
           "detected_events": 31,
           "actual_events": 35,
-          "false_alert_episodes": 112
+          "false_alert_episodes": 112,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.5,
@@ -119,7 +126,8 @@
           "event_recall": 0.8571428571428571,
           "detected_events": 30,
           "actual_events": 35,
-          "false_alert_episodes": 99
+          "false_alert_episodes": 99,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.6,
@@ -129,7 +137,8 @@
           "event_recall": 0.8,
           "detected_events": 28,
           "actual_events": 35,
-          "false_alert_episodes": 89
+          "false_alert_episodes": 89,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.7,
@@ -139,7 +148,8 @@
           "event_recall": 0.8,
           "detected_events": 28,
           "actual_events": 35,
-          "false_alert_episodes": 69
+          "false_alert_episodes": 69,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.8,
@@ -149,7 +159,8 @@
           "event_recall": 0.7428571428571429,
           "detected_events": 26,
           "actual_events": 35,
-          "false_alert_episodes": 57
+          "false_alert_episodes": 57,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.9,
@@ -159,7 +170,290 @@
           "event_recall": 0.5428571428571428,
           "detected_events": 19,
           "actual_events": 35,
-          "false_alert_episodes": 30
+          "false_alert_episodes": 30,
+          "hamilton_8_to_7_detected": true
+        }
+      ],
+      "event_details": [
+        {
+          "driver": 1,
+          "position_before": 5,
+          "label_window_start": "2025-04-06 05:39:57.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:07.788000+00:00",
+          "max_probability": 0.9575279451687198,
+          "first_peak_time": "2025-04-06 05:40:05.788000+00:00"
+        },
+        {
+          "driver": 1,
+          "position_before": 3,
+          "label_window_start": "2025-04-06 05:50:38.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:50:39.788000+00:00",
+          "max_probability": 0.20647054003226928,
+          "first_peak_time": "2025-04-06 05:50:38.788000+00:00"
+        },
+        {
+          "driver": 5,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:18:08.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:18:09.788000+00:00",
+          "max_probability": 0.5109480323661562,
+          "first_peak_time": "2025-04-06 05:18:08.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:49:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:49:53.788000+00:00",
+          "max_probability": 0.9475896302734729,
+          "first_peak_time": "2025-04-06 05:49:52.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 9,
+          "label_window_start": "2025-04-06 05:52:06.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:16.788000+00:00",
+          "max_probability": 0.033833905332218396,
+          "first_peak_time": "2025-04-06 05:52:14.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 19,
+          "label_window_start": "2025-04-06 05:04:05.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:13.788000+00:00",
+          "max_probability": 0.9834695150263276,
+          "first_peak_time": "2025-04-06 05:04:07.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 18,
+          "label_window_start": "2025-04-06 05:42:19.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:42:22.788000+00:00",
+          "max_probability": 0.8716068456482156,
+          "first_peak_time": "2025-04-06 05:42:19.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:56.788000+00:00",
+          "max_probability": 0.9434803422713163,
+          "first_peak_time": "2025-04-06 05:03:55.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:12.788000+00:00",
+          "max_probability": 0.9769655861346908,
+          "first_peak_time": "2025-04-06 05:04:05.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:48.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:58.788000+00:00",
+          "max_probability": 0.8886455749792338,
+          "first_peak_time": "2025-04-06 05:04:56.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:54:40.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:49.788000+00:00",
+          "max_probability": 0.9813128496186149,
+          "first_peak_time": "2025-04-06 05:54:46.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:04.788000+00:00",
+          "max_probability": 0.9357466316271191,
+          "first_peak_time": "2025-04-06 05:03:56.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:18.788000+00:00",
+          "max_probability": 0.7308747877182552,
+          "first_peak_time": "2025-04-06 05:04:13.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:05:04.788000+00:00",
+          "max_probability": 0.8488615298478633,
+          "first_peak_time": "2025-04-06 05:04:58.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:37:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:37:07.788000+00:00",
+          "max_probability": 0.20364553902405663,
+          "first_peak_time": "2025-04-06 05:37:04.788000+00:00"
+        },
+        {
+          "driver": 16,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:40:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:09.788000+00:00",
+          "max_probability": 0.8011594930017676,
+          "first_peak_time": "2025-04-06 05:40:08.788000+00:00"
+        },
+        {
+          "driver": 18,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:03:55.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:05.788000+00:00",
+          "max_probability": 0.9576672370656357,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 22,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:04:49.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:59.788000+00:00",
+          "max_probability": 0.9660114040992364,
+          "first_peak_time": "2025-04-06 05:04:58.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:59.788000+00:00",
+          "max_probability": 0.9819003143196291,
+          "first_peak_time": "2025-04-06 05:03:58.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:46:34.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:46:44.788000+00:00",
+          "max_probability": 0.9594537926656151,
+          "first_peak_time": "2025-04-06 05:46:42.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:48:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:48:22.788000+00:00",
+          "max_probability": 0.9730511087304529,
+          "first_peak_time": "2025-04-06 05:48:19.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:50:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:51:08.788000+00:00",
+          "max_probability": 0.7459625325856711,
+          "first_peak_time": "2025-04-06 05:51:06.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:54:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:22.788000+00:00",
+          "max_probability": 0.8919746943808968,
+          "first_peak_time": "2025-04-06 05:54:21.788000+00:00"
+        },
+        {
+          "driver": 27,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:09.788000+00:00",
+          "max_probability": 0.9715613298057963,
+          "first_peak_time": "2025-04-06 05:04:08.788000+00:00"
+        },
+        {
+          "driver": 44,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:11:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:11:54.788000+00:00",
+          "max_probability": 0.9757021559573968,
+          "first_peak_time": "2025-04-06 05:11:51.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:06:14.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:06:24.788000+00:00",
+          "max_probability": 0.42239816526166074,
+          "first_peak_time": "2025-04-06 05:06:23.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:43:32.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:43:33.788000+00:00",
+          "max_probability": 0.07430939303048245,
+          "first_peak_time": "2025-04-06 05:43:32.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:59:26.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:59:36.788000+00:00",
+          "max_probability": 0.9310023366616399,
+          "first_peak_time": "2025-04-06 05:59:34.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 06:17:54.788000+00:00",
+          "estimated_event_time": "2025-04-06 06:18:04.788000+00:00",
+          "max_probability": 0.9559483642497253,
+          "first_peak_time": "2025-04-06 06:17:59.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:36:43.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:36:53.788000+00:00",
+          "max_probability": 0.9375903643259529,
+          "first_peak_time": "2025-04-06 05:36:51.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.8851314150374123,
+          "first_peak_time": "2025-04-06 05:38:00.788000+00:00"
+        },
+        {
+          "driver": 81,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.8442298614106896,
+          "first_peak_time": "2025-04-06 05:37:59.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:00.788000+00:00",
+          "max_probability": 0.9297196330272455,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:52:16.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:26.788000+00:00",
+          "max_probability": 0.9756235250165368,
+          "first_peak_time": "2025-04-06 05:52:25.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:55:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:55:54.788000+00:00",
+          "max_probability": 0.5339914769499771,
+          "first_peak_time": "2025-04-06 05:55:53.788000+00:00"
         }
       ]
     },
@@ -177,7 +471,8 @@
           "event_recall": 1.0,
           "detected_events": 35,
           "actual_events": 35,
-          "false_alert_episodes": 1135
+          "false_alert_episodes": 1135,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.1,
@@ -187,7 +482,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 744
+          "false_alert_episodes": 744,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.15,
@@ -197,7 +493,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 462
+          "false_alert_episodes": 462,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.2,
@@ -207,7 +504,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 308
+          "false_alert_episodes": 308,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.25,
@@ -217,7 +515,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 244
+          "false_alert_episodes": 244,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.3,
@@ -227,7 +526,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 221
+          "false_alert_episodes": 221,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.4,
@@ -237,7 +537,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 156
+          "false_alert_episodes": 156,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.5,
@@ -247,7 +548,8 @@
           "event_recall": 0.8857142857142857,
           "detected_events": 31,
           "actual_events": 35,
-          "false_alert_episodes": 136
+          "false_alert_episodes": 136,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.6,
@@ -257,7 +559,8 @@
           "event_recall": 0.8571428571428571,
           "detected_events": 30,
           "actual_events": 35,
-          "false_alert_episodes": 116
+          "false_alert_episodes": 116,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.7,
@@ -267,7 +570,8 @@
           "event_recall": 0.8,
           "detected_events": 28,
           "actual_events": 35,
-          "false_alert_episodes": 86
+          "false_alert_episodes": 86,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.8,
@@ -277,7 +581,8 @@
           "event_recall": 0.7714285714285715,
           "detected_events": 27,
           "actual_events": 35,
-          "false_alert_episodes": 64
+          "false_alert_episodes": 64,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.9,
@@ -287,7 +592,290 @@
           "event_recall": 0.42857142857142855,
           "detected_events": 15,
           "actual_events": 35,
-          "false_alert_episodes": 17
+          "false_alert_episodes": 17,
+          "hamilton_8_to_7_detected": true
+        }
+      ],
+      "event_details": [
+        {
+          "driver": 1,
+          "position_before": 5,
+          "label_window_start": "2025-04-06 05:39:57.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:07.788000+00:00",
+          "max_probability": 0.9207926146343044,
+          "first_peak_time": "2025-04-06 05:40:05.788000+00:00"
+        },
+        {
+          "driver": 1,
+          "position_before": 3,
+          "label_window_start": "2025-04-06 05:50:38.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:50:39.788000+00:00",
+          "max_probability": 0.09548525157275063,
+          "first_peak_time": "2025-04-06 05:50:38.788000+00:00"
+        },
+        {
+          "driver": 5,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:18:08.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:18:09.788000+00:00",
+          "max_probability": 0.6753238895254782,
+          "first_peak_time": "2025-04-06 05:18:08.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:49:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:49:53.788000+00:00",
+          "max_probability": 0.9170350631001614,
+          "first_peak_time": "2025-04-06 05:49:50.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 9,
+          "label_window_start": "2025-04-06 05:52:06.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:16.788000+00:00",
+          "max_probability": 0.16856935218599928,
+          "first_peak_time": "2025-04-06 05:52:14.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 19,
+          "label_window_start": "2025-04-06 05:04:05.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:13.788000+00:00",
+          "max_probability": 0.911338249926038,
+          "first_peak_time": "2025-04-06 05:04:07.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 18,
+          "label_window_start": "2025-04-06 05:42:19.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:42:22.788000+00:00",
+          "max_probability": 0.8640966238488125,
+          "first_peak_time": "2025-04-06 05:42:19.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:56.788000+00:00",
+          "max_probability": 0.8960986765252873,
+          "first_peak_time": "2025-04-06 05:03:55.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:12.788000+00:00",
+          "max_probability": 0.9202455050916396,
+          "first_peak_time": "2025-04-06 05:04:05.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:48.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:58.788000+00:00",
+          "max_probability": 0.9092959934292817,
+          "first_peak_time": "2025-04-06 05:04:56.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:54:40.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:49.788000+00:00",
+          "max_probability": 0.8718791161643757,
+          "first_peak_time": "2025-04-06 05:54:47.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:04.788000+00:00",
+          "max_probability": 0.8668964979708244,
+          "first_peak_time": "2025-04-06 05:04:03.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:18.788000+00:00",
+          "max_probability": 0.822804848956616,
+          "first_peak_time": "2025-04-06 05:04:13.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:05:04.788000+00:00",
+          "max_probability": 0.8731296491282449,
+          "first_peak_time": "2025-04-06 05:04:58.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:37:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:37:07.788000+00:00",
+          "max_probability": 0.5460571449782898,
+          "first_peak_time": "2025-04-06 05:37:04.788000+00:00"
+        },
+        {
+          "driver": 16,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:40:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:09.788000+00:00",
+          "max_probability": 0.8946400493653441,
+          "first_peak_time": "2025-04-06 05:40:08.788000+00:00"
+        },
+        {
+          "driver": 18,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:03:55.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:05.788000+00:00",
+          "max_probability": 0.9024804006177314,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 22,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:04:49.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:59.788000+00:00",
+          "max_probability": 0.9137911151916587,
+          "first_peak_time": "2025-04-06 05:04:57.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:59.788000+00:00",
+          "max_probability": 0.9202455050916396,
+          "first_peak_time": "2025-04-06 05:03:56.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:46:34.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:46:44.788000+00:00",
+          "max_probability": 0.9142008717021634,
+          "first_peak_time": "2025-04-06 05:46:42.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:48:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:48:22.788000+00:00",
+          "max_probability": 0.9207926146343044,
+          "first_peak_time": "2025-04-06 05:48:19.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:50:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:51:08.788000+00:00",
+          "max_probability": 0.6378572523533604,
+          "first_peak_time": "2025-04-06 05:51:06.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:54:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:22.788000+00:00",
+          "max_probability": 0.8893850824881476,
+          "first_peak_time": "2025-04-06 05:54:15.788000+00:00"
+        },
+        {
+          "driver": 27,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:09.788000+00:00",
+          "max_probability": 0.8929203275317692,
+          "first_peak_time": "2025-04-06 05:04:05.788000+00:00"
+        },
+        {
+          "driver": 44,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:11:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:11:54.788000+00:00",
+          "max_probability": 0.9207926146343044,
+          "first_peak_time": "2025-04-06 05:11:51.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:06:14.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:06:24.788000+00:00",
+          "max_probability": 0.75075984112897,
+          "first_peak_time": "2025-04-06 05:06:19.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:43:32.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:43:33.788000+00:00",
+          "max_probability": 0.4602520558867522,
+          "first_peak_time": "2025-04-06 05:43:32.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:59:26.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:59:36.788000+00:00",
+          "max_probability": 0.9171197819783559,
+          "first_peak_time": "2025-04-06 05:59:34.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 06:17:54.788000+00:00",
+          "estimated_event_time": "2025-04-06 06:18:04.788000+00:00",
+          "max_probability": 0.9192757725170225,
+          "first_peak_time": "2025-04-06 06:17:59.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:36:43.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:36:53.788000+00:00",
+          "max_probability": 0.887979247198743,
+          "first_peak_time": "2025-04-06 05:36:51.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.8506594890437067,
+          "first_peak_time": "2025-04-06 05:38:00.788000+00:00"
+        },
+        {
+          "driver": 81,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.9018046250343136,
+          "first_peak_time": "2025-04-06 05:37:58.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:00.788000+00:00",
+          "max_probability": 0.8311765981058301,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:52:16.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:26.788000+00:00",
+          "max_probability": 0.9202455050916396,
+          "first_peak_time": "2025-04-06 05:52:23.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:55:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:55:54.788000+00:00",
+          "max_probability": 0.4375614463686436,
+          "first_peak_time": "2025-04-06 05:55:53.788000+00:00"
         }
       ]
     },
@@ -305,7 +893,8 @@
           "event_recall": 1.0,
           "detected_events": 35,
           "actual_events": 35,
-          "false_alert_episodes": 955
+          "false_alert_episodes": 955,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.1,
@@ -315,7 +904,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 653
+          "false_alert_episodes": 653,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.15,
@@ -325,7 +915,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 473
+          "false_alert_episodes": 473,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.2,
@@ -335,7 +926,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 348
+          "false_alert_episodes": 348,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.25,
@@ -345,7 +937,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 263
+          "false_alert_episodes": 263,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.3,
@@ -355,7 +948,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 205
+          "false_alert_episodes": 205,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.4,
@@ -365,7 +959,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 167
+          "false_alert_episodes": 167,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.5,
@@ -375,7 +970,8 @@
           "event_recall": 0.9142857142857143,
           "detected_events": 32,
           "actual_events": 35,
-          "false_alert_episodes": 137
+          "false_alert_episodes": 137,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.6,
@@ -385,7 +981,8 @@
           "event_recall": 0.8571428571428571,
           "detected_events": 30,
           "actual_events": 35,
-          "false_alert_episodes": 118
+          "false_alert_episodes": 118,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.7,
@@ -395,7 +992,8 @@
           "event_recall": 0.8285714285714286,
           "detected_events": 29,
           "actual_events": 35,
-          "false_alert_episodes": 82
+          "false_alert_episodes": 82,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.8,
@@ -405,7 +1003,8 @@
           "event_recall": 0.7714285714285715,
           "detected_events": 27,
           "actual_events": 35,
-          "false_alert_episodes": 64
+          "false_alert_episodes": 64,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.9,
@@ -415,14 +1014,297 @@
           "event_recall": 0.5142857142857142,
           "detected_events": 18,
           "actual_events": 35,
-          "false_alert_episodes": 20
+          "false_alert_episodes": 20,
+          "hamilton_8_to_7_detected": true
+        }
+      ],
+      "event_details": [
+        {
+          "driver": 1,
+          "position_before": 5,
+          "label_window_start": "2025-04-06 05:39:57.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:07.788000+00:00",
+          "max_probability": 0.9274145819751237,
+          "first_peak_time": "2025-04-06 05:40:05.788000+00:00"
+        },
+        {
+          "driver": 1,
+          "position_before": 3,
+          "label_window_start": "2025-04-06 05:50:38.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:50:39.788000+00:00",
+          "max_probability": 0.0801015756315272,
+          "first_peak_time": "2025-04-06 05:50:38.788000+00:00"
+        },
+        {
+          "driver": 5,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:18:08.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:18:09.788000+00:00",
+          "max_probability": 0.6798536625573285,
+          "first_peak_time": "2025-04-06 05:18:08.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:49:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:49:53.788000+00:00",
+          "max_probability": 0.9173145918119824,
+          "first_peak_time": "2025-04-06 05:49:50.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 9,
+          "label_window_start": "2025-04-06 05:52:06.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:16.788000+00:00",
+          "max_probability": 0.15397433100384975,
+          "first_peak_time": "2025-04-06 05:52:14.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 19,
+          "label_window_start": "2025-04-06 05:04:05.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:13.788000+00:00",
+          "max_probability": 0.9198115280025161,
+          "first_peak_time": "2025-04-06 05:04:07.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 18,
+          "label_window_start": "2025-04-06 05:42:19.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:42:22.788000+00:00",
+          "max_probability": 0.8584303402015564,
+          "first_peak_time": "2025-04-06 05:42:19.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:56.788000+00:00",
+          "max_probability": 0.895616905799551,
+          "first_peak_time": "2025-04-06 05:03:55.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:12.788000+00:00",
+          "max_probability": 0.9242479383647237,
+          "first_peak_time": "2025-04-06 05:04:05.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:48.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:58.788000+00:00",
+          "max_probability": 0.9129138838192818,
+          "first_peak_time": "2025-04-06 05:04:56.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:54:40.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:49.788000+00:00",
+          "max_probability": 0.8925859387371923,
+          "first_peak_time": "2025-04-06 05:54:47.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:04.788000+00:00",
+          "max_probability": 0.8843567516612947,
+          "first_peak_time": "2025-04-06 05:03:56.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:18.788000+00:00",
+          "max_probability": 0.8719251367983423,
+          "first_peak_time": "2025-04-06 05:04:13.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:05:04.788000+00:00",
+          "max_probability": 0.8459672001136348,
+          "first_peak_time": "2025-04-06 05:05:01.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:37:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:37:07.788000+00:00",
+          "max_probability": 0.7958005080828214,
+          "first_peak_time": "2025-04-06 05:37:04.788000+00:00"
+        },
+        {
+          "driver": 16,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:40:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:09.788000+00:00",
+          "max_probability": 0.8976804220433604,
+          "first_peak_time": "2025-04-06 05:40:08.788000+00:00"
+        },
+        {
+          "driver": 18,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:03:55.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:05.788000+00:00",
+          "max_probability": 0.9141739321262528,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 22,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:04:49.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:59.788000+00:00",
+          "max_probability": 0.9229160224738906,
+          "first_peak_time": "2025-04-06 05:04:58.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:59.788000+00:00",
+          "max_probability": 0.9270562601433782,
+          "first_peak_time": "2025-04-06 05:03:57.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:46:34.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:46:44.788000+00:00",
+          "max_probability": 0.9247074254684224,
+          "first_peak_time": "2025-04-06 05:46:42.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:48:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:48:22.788000+00:00",
+          "max_probability": 0.9274145819751237,
+          "first_peak_time": "2025-04-06 05:48:19.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:50:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:51:08.788000+00:00",
+          "max_probability": 0.5249820105657359,
+          "first_peak_time": "2025-04-06 05:51:07.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:54:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:22.788000+00:00",
+          "max_probability": 0.9087352420590946,
+          "first_peak_time": "2025-04-06 05:54:21.788000+00:00"
+        },
+        {
+          "driver": 27,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:09.788000+00:00",
+          "max_probability": 0.914675825106814,
+          "first_peak_time": "2025-04-06 05:04:08.788000+00:00"
+        },
+        {
+          "driver": 44,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:11:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:11:54.788000+00:00",
+          "max_probability": 0.9274145819751237,
+          "first_peak_time": "2025-04-06 05:11:51.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:06:14.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:06:24.788000+00:00",
+          "max_probability": 0.7844813212251738,
+          "first_peak_time": "2025-04-06 05:06:19.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:43:32.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:43:33.788000+00:00",
+          "max_probability": 0.4964930911100225,
+          "first_peak_time": "2025-04-06 05:43:32.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:59:26.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:59:36.788000+00:00",
+          "max_probability": 0.9213170034804117,
+          "first_peak_time": "2025-04-06 05:59:34.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 06:17:54.788000+00:00",
+          "estimated_event_time": "2025-04-06 06:18:04.788000+00:00",
+          "max_probability": 0.9268973770409401,
+          "first_peak_time": "2025-04-06 06:17:59.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:36:43.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:36:53.788000+00:00",
+          "max_probability": 0.9070509112008979,
+          "first_peak_time": "2025-04-06 05:36:51.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.8761540298860069,
+          "first_peak_time": "2025-04-06 05:38:01.788000+00:00"
+        },
+        {
+          "driver": 81,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.9101562834529094,
+          "first_peak_time": "2025-04-06 05:37:58.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:00.788000+00:00",
+          "max_probability": 0.8301273244504057,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:52:16.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:26.788000+00:00",
+          "max_probability": 0.9270562601433782,
+          "first_peak_time": "2025-04-06 05:52:23.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:55:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:55:54.788000+00:00",
+          "max_probability": 0.532642889090311,
+          "first_peak_time": "2025-04-06 05:55:53.788000+00:00"
         }
       ]
     },
     "suzuka_temporal_event_l15_m250_t150": {
       "rows": 45055,
       "positives": 253,
-      "pr_auc": 0.441724270660078,
+      "pr_auc": 0.4417242706600781,
       "roc_auc": 0.9742327814628546,
       "thresholds": [
         {
@@ -433,7 +1315,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 1056
+          "false_alert_episodes": 1056,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.1,
@@ -443,7 +1326,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 607
+          "false_alert_episodes": 607,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.15,
@@ -453,7 +1337,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 423
+          "false_alert_episodes": 423,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.2,
@@ -463,7 +1348,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 323
+          "false_alert_episodes": 323,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.25,
@@ -473,7 +1359,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 248
+          "false_alert_episodes": 248,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.3,
@@ -483,7 +1370,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 198
+          "false_alert_episodes": 198,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.4,
@@ -493,7 +1381,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 153
+          "false_alert_episodes": 153,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.5,
@@ -503,7 +1392,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 129
+          "false_alert_episodes": 129,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.6,
@@ -513,7 +1403,8 @@
           "event_recall": 0.8571428571428571,
           "detected_events": 30,
           "actual_events": 35,
-          "false_alert_episodes": 106
+          "false_alert_episodes": 106,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.7,
@@ -523,7 +1414,8 @@
           "event_recall": 0.8285714285714286,
           "detected_events": 29,
           "actual_events": 35,
-          "false_alert_episodes": 87
+          "false_alert_episodes": 87,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.8,
@@ -533,7 +1425,8 @@
           "event_recall": 0.8285714285714286,
           "detected_events": 29,
           "actual_events": 35,
-          "false_alert_episodes": 63
+          "false_alert_episodes": 63,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.9,
@@ -543,7 +1436,290 @@
           "event_recall": 0.6285714285714286,
           "detected_events": 22,
           "actual_events": 35,
-          "false_alert_episodes": 30
+          "false_alert_episodes": 30,
+          "hamilton_8_to_7_detected": true
+        }
+      ],
+      "event_details": [
+        {
+          "driver": 1,
+          "position_before": 5,
+          "label_window_start": "2025-04-06 05:39:57.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:07.788000+00:00",
+          "max_probability": 0.9623889157821599,
+          "first_peak_time": "2025-04-06 05:40:05.788000+00:00"
+        },
+        {
+          "driver": 1,
+          "position_before": 3,
+          "label_window_start": "2025-04-06 05:50:38.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:50:39.788000+00:00",
+          "max_probability": 0.04952030824580589,
+          "first_peak_time": "2025-04-06 05:50:38.788000+00:00"
+        },
+        {
+          "driver": 5,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:18:08.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:18:09.788000+00:00",
+          "max_probability": 0.6000429326450949,
+          "first_peak_time": "2025-04-06 05:18:08.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:49:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:49:53.788000+00:00",
+          "max_probability": 0.9461847186385537,
+          "first_peak_time": "2025-04-06 05:49:48.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 9,
+          "label_window_start": "2025-04-06 05:52:06.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:16.788000+00:00",
+          "max_probability": 0.154180749201981,
+          "first_peak_time": "2025-04-06 05:52:15.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 19,
+          "label_window_start": "2025-04-06 05:04:05.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:13.788000+00:00",
+          "max_probability": 0.9574590590479851,
+          "first_peak_time": "2025-04-06 05:04:06.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 18,
+          "label_window_start": "2025-04-06 05:42:19.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:42:22.788000+00:00",
+          "max_probability": 0.8821413194143761,
+          "first_peak_time": "2025-04-06 05:42:19.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:56.788000+00:00",
+          "max_probability": 0.9139135622665292,
+          "first_peak_time": "2025-04-06 05:03:55.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:12.788000+00:00",
+          "max_probability": 0.961423877147113,
+          "first_peak_time": "2025-04-06 05:04:05.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:48.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:58.788000+00:00",
+          "max_probability": 0.9486013940812142,
+          "first_peak_time": "2025-04-06 05:04:56.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:54:40.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:49.788000+00:00",
+          "max_probability": 0.9349323548309643,
+          "first_peak_time": "2025-04-06 05:54:47.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:04.788000+00:00",
+          "max_probability": 0.9231588132461588,
+          "first_peak_time": "2025-04-06 05:03:56.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:18.788000+00:00",
+          "max_probability": 0.8960750503809801,
+          "first_peak_time": "2025-04-06 05:04:13.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:05:04.788000+00:00",
+          "max_probability": 0.8812952034399646,
+          "first_peak_time": "2025-04-06 05:05:01.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:37:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:37:07.788000+00:00",
+          "max_probability": 0.8229574413039189,
+          "first_peak_time": "2025-04-06 05:37:04.788000+00:00"
+        },
+        {
+          "driver": 16,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:40:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:09.788000+00:00",
+          "max_probability": 0.9317346439892797,
+          "first_peak_time": "2025-04-06 05:40:08.788000+00:00"
+        },
+        {
+          "driver": 18,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:03:55.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:05.788000+00:00",
+          "max_probability": 0.9399104500234883,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 22,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:04:49.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:59.788000+00:00",
+          "max_probability": 0.9618284341186198,
+          "first_peak_time": "2025-04-06 05:04:58.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:59.788000+00:00",
+          "max_probability": 0.9644544202266062,
+          "first_peak_time": "2025-04-06 05:03:57.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:46:34.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:46:44.788000+00:00",
+          "max_probability": 0.9574838862854762,
+          "first_peak_time": "2025-04-06 05:46:43.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:48:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:48:22.788000+00:00",
+          "max_probability": 0.9634328306180946,
+          "first_peak_time": "2025-04-06 05:48:19.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:50:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:51:08.788000+00:00",
+          "max_probability": 0.5342255591047821,
+          "first_peak_time": "2025-04-06 05:51:07.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:54:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:22.788000+00:00",
+          "max_probability": 0.9182301891399945,
+          "first_peak_time": "2025-04-06 05:54:15.788000+00:00"
+        },
+        {
+          "driver": 27,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:09.788000+00:00",
+          "max_probability": 0.9460444809856431,
+          "first_peak_time": "2025-04-06 05:04:08.788000+00:00"
+        },
+        {
+          "driver": 44,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:11:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:11:54.788000+00:00",
+          "max_probability": 0.9634328306180946,
+          "first_peak_time": "2025-04-06 05:11:51.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:06:14.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:06:24.788000+00:00",
+          "max_probability": 0.8245510564650498,
+          "first_peak_time": "2025-04-06 05:06:19.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:43:32.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:43:33.788000+00:00",
+          "max_probability": 0.5862668935682349,
+          "first_peak_time": "2025-04-06 05:43:32.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:59:26.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:59:36.788000+00:00",
+          "max_probability": 0.9476079015398688,
+          "first_peak_time": "2025-04-06 05:59:34.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 06:17:54.788000+00:00",
+          "estimated_event_time": "2025-04-06 06:18:04.788000+00:00",
+          "max_probability": 0.9582202686891055,
+          "first_peak_time": "2025-04-06 06:17:59.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:36:43.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:36:53.788000+00:00",
+          "max_probability": 0.9124487809735164,
+          "first_peak_time": "2025-04-06 05:36:51.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.8831616062564477,
+          "first_peak_time": "2025-04-06 05:38:01.788000+00:00"
+        },
+        {
+          "driver": 81,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.950190525791961,
+          "first_peak_time": "2025-04-06 05:37:58.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:00.788000+00:00",
+          "max_probability": 0.8590345473147557,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:52:16.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:26.788000+00:00",
+          "max_probability": 0.9634035953994257,
+          "first_peak_time": "2025-04-06 05:52:23.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:55:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:55:54.788000+00:00",
+          "max_probability": 0.5079573589069444,
+          "first_peak_time": "2025-04-06 05:55:53.788000+00:00"
         }
       ]
     },
@@ -561,7 +1737,8 @@
           "event_recall": 1.0,
           "detected_events": 35,
           "actual_events": 35,
-          "false_alert_episodes": 1015
+          "false_alert_episodes": 1015,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.1,
@@ -571,7 +1748,8 @@
           "event_recall": 0.9714285714285714,
           "detected_events": 34,
           "actual_events": 35,
-          "false_alert_episodes": 577
+          "false_alert_episodes": 577,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.15,
@@ -581,7 +1759,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 390
+          "false_alert_episodes": 390,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.2,
@@ -591,7 +1770,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 281
+          "false_alert_episodes": 281,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.25,
@@ -601,7 +1781,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 225
+          "false_alert_episodes": 225,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.3,
@@ -611,7 +1792,8 @@
           "event_recall": 0.9428571428571428,
           "detected_events": 33,
           "actual_events": 35,
-          "false_alert_episodes": 192
+          "false_alert_episodes": 192,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.4,
@@ -621,7 +1803,8 @@
           "event_recall": 0.9142857142857143,
           "detected_events": 32,
           "actual_events": 35,
-          "false_alert_episodes": 147
+          "false_alert_episodes": 147,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.5,
@@ -631,7 +1814,8 @@
           "event_recall": 0.9142857142857143,
           "detected_events": 32,
           "actual_events": 35,
-          "false_alert_episodes": 132
+          "false_alert_episodes": 132,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.6,
@@ -641,7 +1825,8 @@
           "event_recall": 0.8857142857142857,
           "detected_events": 31,
           "actual_events": 35,
-          "false_alert_episodes": 102
+          "false_alert_episodes": 102,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.7,
@@ -651,7 +1836,8 @@
           "event_recall": 0.8285714285714286,
           "detected_events": 29,
           "actual_events": 35,
-          "false_alert_episodes": 84
+          "false_alert_episodes": 84,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.8,
@@ -661,7 +1847,8 @@
           "event_recall": 0.8,
           "detected_events": 28,
           "actual_events": 35,
-          "false_alert_episodes": 62
+          "false_alert_episodes": 62,
+          "hamilton_8_to_7_detected": true
         },
         {
           "threshold": 0.9,
@@ -671,15 +1858,345 @@
           "event_recall": 0.5714285714285714,
           "detected_events": 20,
           "actual_events": 35,
-          "false_alert_episodes": 27
+          "false_alert_episodes": 27,
+          "hamilton_8_to_7_detected": true
+        }
+      ],
+      "event_details": [
+        {
+          "driver": 1,
+          "position_before": 5,
+          "label_window_start": "2025-04-06 05:39:57.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:07.788000+00:00",
+          "max_probability": 0.9362338591906162,
+          "first_peak_time": "2025-04-06 05:40:05.788000+00:00"
+        },
+        {
+          "driver": 1,
+          "position_before": 3,
+          "label_window_start": "2025-04-06 05:50:38.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:50:39.788000+00:00",
+          "max_probability": 0.058229587948898015,
+          "first_peak_time": "2025-04-06 05:50:38.788000+00:00"
+        },
+        {
+          "driver": 5,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:18:08.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:18:09.788000+00:00",
+          "max_probability": 0.5830722783071843,
+          "first_peak_time": "2025-04-06 05:18:08.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:49:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:49:53.788000+00:00",
+          "max_probability": 0.9281915906471905,
+          "first_peak_time": "2025-04-06 05:49:48.788000+00:00"
+        },
+        {
+          "driver": 6,
+          "position_before": 9,
+          "label_window_start": "2025-04-06 05:52:06.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:16.788000+00:00",
+          "max_probability": 0.13513289511669146,
+          "first_peak_time": "2025-04-06 05:52:15.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 19,
+          "label_window_start": "2025-04-06 05:04:05.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:13.788000+00:00",
+          "max_probability": 0.926145258577201,
+          "first_peak_time": "2025-04-06 05:04:07.788000+00:00"
+        },
+        {
+          "driver": 7,
+          "position_before": 18,
+          "label_window_start": "2025-04-06 05:42:19.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:42:22.788000+00:00",
+          "max_probability": 0.8412091138979011,
+          "first_peak_time": "2025-04-06 05:42:19.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:56.788000+00:00",
+          "max_probability": 0.8941649099087176,
+          "first_peak_time": "2025-04-06 05:03:55.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:12.788000+00:00",
+          "max_probability": 0.9328619894744863,
+          "first_peak_time": "2025-04-06 05:04:05.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:48.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:58.788000+00:00",
+          "max_probability": 0.9227840133674148,
+          "first_peak_time": "2025-04-06 05:04:56.788000+00:00"
+        },
+        {
+          "driver": 10,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:54:40.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:49.788000+00:00",
+          "max_probability": 0.9105066821265045,
+          "first_peak_time": "2025-04-06 05:54:46.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:04.788000+00:00",
+          "max_probability": 0.8981287183271758,
+          "first_peak_time": "2025-04-06 05:03:56.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:18.788000+00:00",
+          "max_probability": 0.88712058364833,
+          "first_peak_time": "2025-04-06 05:04:13.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:04:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:05:04.788000+00:00",
+          "max_probability": 0.8784026020158553,
+          "first_peak_time": "2025-04-06 05:05:01.788000+00:00"
+        },
+        {
+          "driver": 14,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:37:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:37:07.788000+00:00",
+          "max_probability": 0.8350220711903615,
+          "first_peak_time": "2025-04-06 05:37:04.788000+00:00"
+        },
+        {
+          "driver": 16,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:40:04.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:40:09.788000+00:00",
+          "max_probability": 0.9063815808670397,
+          "first_peak_time": "2025-04-06 05:40:08.788000+00:00"
+        },
+        {
+          "driver": 18,
+          "position_before": 20,
+          "label_window_start": "2025-04-06 05:03:55.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:05.788000+00:00",
+          "max_probability": 0.9283231564360358,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 22,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:04:49.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:59.788000+00:00",
+          "max_probability": 0.9347629392763986,
+          "first_peak_time": "2025-04-06 05:04:58.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:03:56.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:03:59.788000+00:00",
+          "max_probability": 0.9347629392763986,
+          "first_peak_time": "2025-04-06 05:03:57.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:46:34.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:46:44.788000+00:00",
+          "max_probability": 0.9344624354236287,
+          "first_peak_time": "2025-04-06 05:46:42.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:48:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:48:22.788000+00:00",
+          "max_probability": 0.9362338591906162,
+          "first_peak_time": "2025-04-06 05:48:19.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:50:58.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:51:08.788000+00:00",
+          "max_probability": 0.3650567312272954,
+          "first_peak_time": "2025-04-06 05:51:07.788000+00:00"
+        },
+        {
+          "driver": 23,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:54:12.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:54:22.788000+00:00",
+          "max_probability": 0.9014722063322421,
+          "first_peak_time": "2025-04-06 05:54:21.788000+00:00"
+        },
+        {
+          "driver": 27,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:09.788000+00:00",
+          "max_probability": 0.9316543935294801,
+          "first_peak_time": "2025-04-06 05:04:08.788000+00:00"
+        },
+        {
+          "driver": 44,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:11:44.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:11:54.788000+00:00",
+          "max_probability": 0.9362338591906162,
+          "first_peak_time": "2025-04-06 05:11:51.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 05:06:14.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:06:24.788000+00:00",
+          "max_probability": 0.7778000706639118,
+          "first_peak_time": "2025-04-06 05:06:19.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 10,
+          "label_window_start": "2025-04-06 05:43:32.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:43:33.788000+00:00",
+          "max_probability": 0.6025011696396788,
+          "first_peak_time": "2025-04-06 05:43:32.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 17,
+          "label_window_start": "2025-04-06 05:59:26.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:59:36.788000+00:00",
+          "max_probability": 0.9327901205361658,
+          "first_peak_time": "2025-04-06 05:59:34.788000+00:00"
+        },
+        {
+          "driver": 55,
+          "position_before": 16,
+          "label_window_start": "2025-04-06 06:17:54.788000+00:00",
+          "estimated_event_time": "2025-04-06 06:18:04.788000+00:00",
+          "max_probability": 0.9362585263817504,
+          "first_peak_time": "2025-04-06 06:17:59.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 13,
+          "label_window_start": "2025-04-06 05:36:43.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:36:53.788000+00:00",
+          "max_probability": 0.9162873247151222,
+          "first_peak_time": "2025-04-06 05:36:51.788000+00:00"
+        },
+        {
+          "driver": 63,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.8237380504086312,
+          "first_peak_time": "2025-04-06 05:38:01.788000+00:00"
+        },
+        {
+          "driver": 81,
+          "position_before": 8,
+          "label_window_start": "2025-04-06 05:37:52.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:38:02.788000+00:00",
+          "max_probability": 0.9183775532677088,
+          "first_peak_time": "2025-04-06 05:37:58.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 11,
+          "label_window_start": "2025-04-06 05:03:59.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:04:00.788000+00:00",
+          "max_probability": 0.8195251180593631,
+          "first_peak_time": "2025-04-06 05:03:59.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 14,
+          "label_window_start": "2025-04-06 05:52:16.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:52:26.788000+00:00",
+          "max_probability": 0.9347629392763986,
+          "first_peak_time": "2025-04-06 05:52:23.788000+00:00"
+        },
+        {
+          "driver": 87,
+          "position_before": 12,
+          "label_window_start": "2025-04-06 05:55:53.788000+00:00",
+          "estimated_event_time": "2025-04-06 05:55:54.788000+00:00",
+          "max_probability": 0.6576803611799057,
+          "first_peak_time": "2025-04-06 05:55:53.788000+00:00"
         }
       ]
     }
   },
   "selection": {
-    "best": "suzuka_temporal_event_l15_m250_t150",
-    "model_path": "data\\models\\suzuka_temporal_event_l15_m250_t150_label_overtake.txt",
-    "rule": "highest untouched-2025-Suzuka PR-AUC; thresholds only reported"
+    "best": "suzuka_temporal_event_l31_m250_t100",
+    "model_path": "data\\models\\suzuka_temporal_event_l31_m250_t100_label_overtake.txt",
+    "rule": "must detect Hamilton P8-to-P7 at raw 0.60; maximize event recall, minimize false-alert episodes, then PR-AUC",
+    "operating_raw_threshold": 0.6,
+    "operating_metrics": {
+      "threshold": 0.6,
+      "precision": 0.2752562225475842,
+      "recall": 0.7430830039525692,
+      "fires": 683,
+      "event_recall": 0.8857142857142857,
+      "detected_events": 31,
+      "actual_events": 35,
+      "false_alert_episodes": 102,
+      "hamilton_8_to_7_detected": true
+    }
+  },
+  "e_development_comparison": {
+    "previous_e_candidate": "suzuka_temporal_event_l15_m250_t150",
+    "improved_e_candidate": "suzuka_temporal_event_l31_m250_t100",
+    "same_operating_raw_threshold": 0.6,
+    "previous_e": {
+      "pr_auc": 0.4417242706600781,
+      "threshold": 0.6,
+      "precision": 0.2669432918395574,
+      "recall": 0.7628458498023716,
+      "fires": 723,
+      "event_recall": 0.8571428571428571,
+      "detected_events": 30,
+      "actual_events": 35,
+      "false_alert_episodes": 106,
+      "hamilton_8_to_7_detected": true
+    },
+    "improved_e": {
+      "pr_auc": 0.41451904981177773,
+      "threshold": 0.6,
+      "precision": 0.2752562225475842,
+      "recall": 0.7430830039525692,
+      "fires": 683,
+      "event_recall": 0.8857142857142857,
+      "detected_events": 31,
+      "actual_events": 35,
+      "false_alert_episodes": 102,
+      "hamilton_8_to_7_detected": true
+    },
+    "delta": {
+      "detected_events": 1,
+      "false_alert_episodes": -4,
+      "pr_auc": -0.02720522084830035
+    },
+    "interpretation": "The improved E is better at the fixed demo operating point (+1 detected event, -4 false-alert episodes), while global PR-AUC is lower; do not claim universal dominance."
   },
   "training_filter": {
     "method": "target_event_quality_filter",

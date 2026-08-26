@@ -1,6 +1,8 @@
 {
   "run_name": "races_initial_event_type_final",
   "schema_version": "event_type_v1_26",
+  "model_bundle_version": "suzuka-demo-e-2026-08-24",
+  "time_unit": "seconds",
   "model_format": "LightGBM text booster",
   "horizon_seconds": 30.0,
   "feature_count": 26,

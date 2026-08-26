@@ -41,6 +41,8 @@ def main():
     contract = {
         "run_name": args.run_name,
         "schema_version": first_meta.get("feature_schema_version", train_races.FEATURE_SCHEMA_VERSION),
+        "model_bundle_version": args.model_bundle_version,
+        "time_unit": "seconds",
         "model_format": "LightGBM text booster",
         "horizon_seconds": 30.0,
         "feature_count": len(features),
@@ -72,6 +74,7 @@ def parse_args():
     parser.add_argument("--model-dir", default="data/models")
     parser.add_argument("--sample-path")
     parser.add_argument("--out")
+    parser.add_argument("--model-bundle-version", default="suzuka-demo-e-2026-08-24")
     return parser.parse_args()
 
 

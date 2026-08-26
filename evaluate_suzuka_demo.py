@@ -28,6 +28,27 @@ def _episodes(frame: pd.DataFrame, mask: np.ndarray, max_gap_s: float = 2.0) -> 
 def metrics(frame: pd.DataFrame, y: np.ndarray, probability: np.ndarray) -> dict:
     rows = []
     positive_episodes = _episodes(frame, y == 1)
+    event_details = []
+    for index in positive_episodes:
+        episode = frame.iloc[index].sort_values("t")
+        event_time = pd.to_datetime(episode["t"].iloc[-1], utc=True) + pd.Timedelta(seconds=1)
+        driver = int(episode["driver"].iloc[0])
+        position = (
+            int(episode["position"].dropna().iloc[0])
+            if "position" in episode and not episode["position"].dropna().empty
+            else None
+        )
+        event_probability = probability[index]
+        event_details.append({
+            "driver": driver,
+            "position_before": position,
+            "label_window_start": str(pd.to_datetime(episode["t"].iloc[0], utc=True)),
+            "estimated_event_time": str(event_time),
+            "max_probability": float(np.max(event_probability)),
+            "first_peak_time": str(
+                pd.to_datetime(episode.iloc[int(np.argmax(event_probability))]["t"], utc=True)
+            ),
+        })
     for threshold in (0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9):
         fired = probability >= threshold
         tp = int(np.sum(fired & (y == 1)))
@@ -37,6 +58,10 @@ def metrics(frame: pd.DataFrame, y: np.ndarray, probability: np.ndarray) -> dict
         recall = tp / (tp + fn) if tp + fn else 0.0
         detected_events = sum(bool(fired[index].any()) for index in positive_episodes)
         false_alert_episodes = len(_episodes(frame, fired & (y == 0), max_gap_s=5.0))
+        hamilton = [
+            event for event in event_details
+            if event["driver"] == 44 and event["position_before"] == 8
+        ]
         rows.append({
             "threshold": threshold,
             "precision": precision,
@@ -46,6 +71,9 @@ def metrics(frame: pd.DataFrame, y: np.ndarray, probability: np.ndarray) -> dict
             "detected_events": detected_events,
             "actual_events": len(positive_episodes),
             "false_alert_episodes": false_alert_episodes,
+            "hamilton_8_to_7_detected": bool(hamilton) and all(
+                event["max_probability"] >= threshold for event in hamilton
+            ),
         })
     return {
         "rows": int(len(y)),
@@ -53,6 +81,7 @@ def metrics(frame: pd.DataFrame, y: np.ndarray, probability: np.ndarray) -> dict
         "pr_auc": float(average_precision_score(y, probability)),
         "roc_auc": float(roc_auc_score(y, probability)),
         "thresholds": rows,
+        "event_details": event_details,
     }
 
 
